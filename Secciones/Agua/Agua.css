@@ -17,14 +17,14 @@ h2{
                  -5px -5px 9px #ffffff;
 }
 
-/* aqui es para darle brillo un contorno en negro y blanco al pasar el raton*/
+/* aqui es para darle brillo un contorno en negro y blanco al pasar el raton a las img*/
 .img:hover {
     box-shadow:  5px 5px 9px #b3b3b3,
     -5px -5px 9px #ffffff;
 }
 
 
-/* aqui esta que se agarande la img*/
+/* aqui esta que se haga agrande la img*/
 .img {
     transition: transform .2s; 
 }
@@ -33,7 +33,36 @@ h2{
 }
 
 
-/* nada nada */
+/* flecha */
+.flecha {
+    /*la posicion de la imagen*/
+    position: absolute;
+    top: 295px;
+    right:  990px;
+    /*maximmo tamaño*/
+    max-width: 80%;
+    max-height: 70%;
+    /*el tamaño*/
+    height: 70px;
+    width: 80px;
+}
 
+/*para que la flecha se haga grande*/
+.flecha {
+    transition: transform .2s; 
+}
+.flecha:hover {
+    transform: scale(1.6); 
+}
+
+/*foto aire*/
+.fotoaire {
+        /*maximmo tamaño*/
+        max-width: 2000000000000000000%;
+        max-height: 1000000000000000000%;
+        /*el tamaño*/
+        height: 10000000000px;
+        width: 200000000000px;
+}
 
 
