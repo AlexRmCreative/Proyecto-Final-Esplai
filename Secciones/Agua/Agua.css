@@ -1,18 +1,39 @@
-body {
-    background image: url("img\fondoAgua.jpg");
-}
-
+/*es la posicion y la img*/
 h2{
-    
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+/*aqui estan los efecto de blur tamaño de img*/
 .img {
     margin: 25px;
-    width: 90px;
-    height: 90px;
-
+    width: 95px;
+    height: 95px;
+    border-radius: 90px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  5px 5px 9px #9d9d9d,
+                 -5px -5px 9px #ffffff;
 }
+
+/* aqui es para darle brillo un contorno en negro y blanco al pasar el raton*/
+.img:hover {
+    box-shadow:  5px 5px 9px #b3b3b3,
+    -5px -5px 9px #ffffff;
+}
+
+
+/* aqui esta que se agarande la img*/
+.img {
+    transition: transform .2s; 
+}
+.img:hover {
+    transform: scale(1.6); 
+}
+
+
+/* nada nada */
+
+
+
