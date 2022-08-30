@@ -10,7 +10,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -139,7 +138,7 @@ span a{
 }
 
 div.col-2.col-sm-4.col-md-2{
-    margin-left: 4vh;
+    margin-left: 15vh;
 }
 
 /* nada nada */
