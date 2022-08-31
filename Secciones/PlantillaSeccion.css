@@ -128,7 +128,8 @@ h4 {
 }
 span{
     display: inline-block !important;
-    width: 20vh !important;
+    width: 15vh !important;
+    justify-content: center;
 }
 
 a{
@@ -138,8 +139,20 @@ a{
 }
 
 span a{
+    display: inline-block !important;
+    width: 10vh !important;
+    height: 10vh !important;
+    justify-content: center !important;
+}
+
+.imgLeft{
+    margin-right: 0vh;
+    margin-left: 0vh;
+    border-radius: 90vh;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    width: 10vh;
+    height: 10vh;
 }
 
 .col-lg-2{
