@@ -9,17 +9,20 @@
 .primeraColumna {
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    width: 80vw;
 }
 
 .imgSonidos {
     display: flex;
     justify-content: center;
     margin-top: 2vh;
+    font-size: auto;
     width: 14vh;
     height: 14vh;
     border-radius: 90vh;
@@ -40,12 +43,14 @@
 
 h4 {
     text-align: center;
-    margin-top: 2vh;
+    text-transform: 2v;
+    
+    
 }
 
 .divImage{
-    margin-right: 1vh;
-    margin-left: 1vh;
+    margin-right: 90vw;
+    margin-left: 90vw;
 }
 
 /* //////////////////////////////////////////// */
@@ -137,8 +142,12 @@ span a{
     justify-content: right;
 }
 
-div.col-2.col-sm-4.col-md-2{
-    margin-left: 15vh;
+.col-lg-2{
+padding-left: 2vw;
+padding-right: 2vw;
 }
 
+.col-xs-6{
+    padding-bottom: 1vh;
+}
 /* nada nada */
