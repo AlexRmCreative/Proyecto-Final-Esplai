@@ -1,0 +1,55 @@
+.ayuda {
+    display: flex;
+    align-self: right;
+    align-content: right;
+}
+.terceros{
+    display: flex;
+    align-self: center;
+    align-content: center;
+    margin-right: 5vh !important;
+}
+.backImg{
+    width: 13vh;
+    height: 13vh;
+}
+.soundImg{
+    width: 17vh;
+    height: 17vh;
+}
+.footerImg{
+    width: 13vh;
+    height: 13vh;
+}
+
+.lienzo{
+    height: 21vh;
+}
+@media (max-width: 575.98px) {
+    .ayuda{
+        display: flex;
+        justify-content: center;
+    }
+    .lienzo{
+        height: 0vh;
+    }
+    .back, .backImg, a{
+        display: flex;
+        justify-content: center;
+    }
+    .backImg{
+        width: 13vh;
+        height: 13vh;
+    }
+    .soundImg{
+        width: 16vh;
+        height: 16vh;
+    }
+    .footerImg{
+        width: 13vh;
+        height: 13vh;
+    }
+    h4{
+        font-size: 2vh;
+    }
+}
