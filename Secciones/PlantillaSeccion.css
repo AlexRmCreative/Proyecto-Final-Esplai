@@ -19,17 +19,17 @@
   border-radius: 90vh;
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
   box-shadow: 5px 5px 9px #9d9d9d, -5px -5px 9px #ffffff;
-  -webkit-transition: transform 2s;
-  -moz-transition: transform 2s;
-  -ms-transition: transform 2s;
-  -o-transition: transform 2s;
+  -webkit-transition:2s;
+  -moz-transition:2s;
+  -ms-transition:2s;
+  -o-transition:2s;
 }
 img{
     transition: 2s;
-    -webkit-transition: transform 2s;
-  -moz-transition: transform 2s;
-  -ms-transition: transform 2s;
-  -o-transition: transform 2s;
+    -webkit-transition:2s;
+  -moz-transition:2s;
+  -ms-transition:2s;
+  -o-transition:2s;
 }
 .soundImg {
   width: 17vh;
@@ -44,12 +44,12 @@ img{
 }
 img:hover {
   transform: scale(1.3);
-  margin-bottom: 8vh;
+  margin-bottom: 2vh;
   transition: 2s;
-    -webkit-transition: transform 2s;
-  -moz-transition: transform 2s;
-  -ms-transition: transform 2s;
-  -o-transition: transform 2s;
+  -webkit-transition:2s;
+  -moz-transition:2s;
+  -ms-transition:2s;
+  -o-transition: 2s;
 }
 .footerImg {
   width: 13vh;
@@ -57,10 +57,10 @@ img:hover {
   border-radius: 90vh;
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
   box-shadow: 5px 5px 9px #9d9d9d, -5px -5px 9px #ffffff;
-  -webkit-transition: transform 2s;
-  -moz-transition: transform 2s;
-  -ms-transition: transform 2s;
-  -o-transition: transform 2s;
+  -webkit-transition:2s;
+  -moz-transition:2s;
+  -ms-transition:2s;
+  -o-transition:2s;
 }
 
 .lienzo {
