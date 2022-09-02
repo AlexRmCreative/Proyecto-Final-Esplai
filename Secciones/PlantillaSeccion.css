@@ -17,25 +17,23 @@
   width: 13vh;
   height: 13vh;
   border-radius: 90vh;
-  background: linear-gradient(145deg, #f0f0f0, #cacaca);
-  box-shadow: 5px 5px 9px #9d9d9d, -5px -5px 9px #ffffff;
-  -webkit-transition:2s;
-  -moz-transition:2s;
-  -ms-transition:2s;
-  -o-transition:2s;
+  background: linear-gradient(145deg);
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
 }
-img{
-    transition: 2s;
-    -webkit-transition:2s;
-  -moz-transition:2s;
-  -ms-transition:2s;
-  -o-transition:2s;
+img {
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
 }
 .soundImg {
   width: 17vh;
   height: 17vh;
   border-radius: 90vh;
-  background: linear-gradient(145deg, #f0f0f0, #cacaca);
   box-shadow: 5px 5px 9px #9d9d9d, -5px -5px 9px #ffffff;
   -webkit-border-radius: 90vh;
   -moz-border-radius: 90vh;
@@ -43,13 +41,13 @@ img{
   -o-border-radius: 90vh;
 }
 
-.soundImg:hover{
+.soundImg:hover {
   transform: translateX(0px) rotateZ(0deg);
   /*transition: transform 0.5s ease-out;*/
   animation: rotar 2s linear infinite;
 }
 @keyframes rotar {
-  100%{
+  100% {
     transform: translateX(0px) rotateZ(360deg);
   }
 }
@@ -58,23 +56,21 @@ img:hover {
   transform: scale(1.3);
   margin-bottom: 2vh;
   transition: 2s;
-  -webkit-transition:2s;
-  -moz-transition:2s;
-  -ms-transition:2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
   -o-transition: 2s;
 }
-
 
 .footerImg {
   width: 13vh;
   height: 13vh;
   border-radius: 90vh;
-  background: linear-gradient(145deg, #f0f0f0, #cacaca);
   box-shadow: 5px 5px 9px #9d9d9d, -5px -5px 9px #ffffff;
-  -webkit-transition:2s;
-  -moz-transition:2s;
-  -ms-transition:2s;
-  -o-transition:2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
 }
 
 .lienzo {
