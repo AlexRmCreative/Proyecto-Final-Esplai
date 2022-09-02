@@ -1,11 +1,13 @@
-button, input[type="submit"], input[type="reset"] {
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
 
 .backB {
@@ -30,22 +32,136 @@ img {
     height: 10vh;
 }
 
-@media (min-width: 576px) {
+@media only screen and (max-width: 600px) {
+    .notifyIcon {
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
 
+    .notifySpace {
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    #IntroduccionIcon {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+
+    button {
+        justify-self: start;
+        justify-content: start;
+    }
 }
 
-@media (min-width: 768px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .notifyIcon {
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
 
+    .notifySpace {
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    #IntroduccionIcon {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+
+    button {
+        justify-self: start;
+        justify-content: start;
+    }
 }
 
-@media (min-width: 992px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .notifyIcon {
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
 
+    .notifySpace {
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    #IntroduccionIcon {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+    button {
+        justify-self: start;
+        justify-content: start;
+    }
 }
 
-@media (min-width: 1200px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .notifyIcon {
+        height: 17vh;
+        width: 20%;
+        justify-content: center;
+    }
 
+    .notifySpace {
+        height: 17vh;
+        width: 20%;
+        justify-content: center;
+    }
+
+    #IntroduccionIcon {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+
+    button {
+        justify-self: start;
+        justify-content: start;
+    }
 }
 
-@media (min-width: 1400px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .notifyIcon {
+        height: 17vh;
+        width: 20%;
+        justify-content: center;
+    }
 
+    .notifySpace {
+        height: 17vh;
+        width: 20%;
+        justify-content: center;
+    }
+
+    #IntroduccionIcon {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+
+    button {
+        justify-self: start;
+        justify-content: start;
+    }
 }
