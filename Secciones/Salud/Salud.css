@@ -1,0 +1,167 @@
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.backB {
+    margin-top: 2vh;
+}
+
+.backImg {
+    width: 12vh;
+    height: 12vh;
+    border-radius: 90vh;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow: 5px 5px 9px #9d9d9d, -5px -5px 9px #ffffff;
+}
+
+img {
+    width: 13vh;
+    height: 13vh;
+    border-radius: 90vh;
+}
+
+.lienzo {
+    height: 10vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .notifyIcon {
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .notifySpace {
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    #IntroduccionIcon {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+
+    button {
+        justify-self: start;
+        justify-content: start;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .notifyIcon {
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .notifySpace {
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    #IntroduccionIcon {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+
+    button {
+        justify-self: start;
+        justify-content: start;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .notifyIcon {
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    .notifySpace {
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+
+    #IntroduccionIcon {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+    button {
+        justify-self: start;
+        justify-content: start;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .notifyIcon {
+        height: 17vh;
+        width: 20%;
+        justify-content: center;
+    }
+
+    .notifySpace {
+        height: 17vh;
+        width: 20%;
+        justify-content: center;
+    }
+
+    #IntroduccionIcon {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+
+    button {
+        justify-self: start;
+        justify-content: start;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .notifyIcon {
+        height: 17vh;
+        width: 20%;
+        justify-content: center;
+    }
+
+    .notifySpace {
+        height: 17vh;
+        width: 20%;
+        justify-content: center;
+    }
+
+    #IntroduccionIcon {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+
+    button {
+        justify-self: start;
+        justify-content: start;
+    }
+}
