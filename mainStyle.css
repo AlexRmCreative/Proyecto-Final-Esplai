@@ -1,7 +1,17 @@
 body{
     background-size: 100%;
 }
-img:hover{
+
+.titulo{
+    height: 23vh ;
+    margin-top: 5vh;
+}
+
+.salud{
+    margin-top: 7vh; 
+}
+
+.imagen:hover{
     box-shadow: 5px 5px 9px #b3b3b3,
         -5px -5px 9px #ffffff;
     transform: scale(1.3);
@@ -12,7 +22,7 @@ img:hover{
     -ms-transition: 2s;
     -o-transition: 2s;
 }
-.soundImg{
+.IconImg{
     width: 17vh;
     height: 17vh;
     box-shadow: 5px 5px 9px #b3b3b3,
@@ -57,5 +67,9 @@ img:hover{
     }
     h4{
         font-size: 2vh;
+    }
+
+    .salud{
+        margin-top: 0vh; 
     }
 }

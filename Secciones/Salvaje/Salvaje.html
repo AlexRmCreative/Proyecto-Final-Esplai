@@ -12,22 +12,25 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../PlantillaSeccion.css" />
+
+    <!--JavaScript-->
+    <script src="./salvajePlayPause.js"></script>
+
   </head>
   <body class="container w-100" background="img\FondoSalvaje.jpg">
     <div class="container w-100">
       <div class="row h-100 backB">
-        <!--Primeros botones principales-->
+
+        <!--Boton al menú principal-->
         <div class="col-12 col-sm-4 col-md-2">
           <a href="../../main.html"
             ><img class="backImg" src="../img/Atras.png"
           /></a>
         </div>
       </div>
-
       <!--
             LIENZO
             ESPACIADO
-            IMPORTANTE
         -->
       <div class="row lienzo">
         <div
@@ -35,54 +38,108 @@
         ></div>
       </div>
 
+      <!-- Botones de Audios-->
       <div class="row d-flex justify-content-center align-items-center">
-        <!--Primeros botones principales-->
+
+        <!-- Boton Bosque-->
         <div class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
-          <a class="d-flex justify-content-center" href=""
-            ><img class="soundImg" src="img/Bosque.png"
-          /></a>
+          <audio class="d-flex justify-content-center" id="audioFile1">
+            <source src="../Sounds/Salvaje/Bosque.mp3" type="audio/mpeg" />
+          </audio>
+          <script>
+            document.getElementById("audioFile1").controls = false;
+          </script>
+          <img
+            id="imagenControl1"
+            onclick="playPause1()"
+            class="IconImg"
+            src="./img/Bosque.png"
+          />
           <h4 class="text-center">Bosque</h4>
         </div>
+
+        <!-- Boton Jungla-->
         <div class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
-          <a class="d-flex justify-content-center" href=""
-            ><img class="soundImg" src="img/Jungla.png"
-          /></a>
+          <audio class="d-flex justify-content-center" id="audioFile2">
+            <source src="../Sounds/Salvaje/Jungla.mp3" type="audio/mpeg" />
+          </audio>
+          <script>
+            document.getElementById("audioFile2").controls = false;
+          </script>
+          <img
+            id="imagenControl2"
+            onclick="playPause2()"
+            class="IconImg"
+            src="img/Jungla.png"
+          />
           <h4 class="text-center">Jungla</h4>
         </div>
+
+        <!-- Boton Sabana-->
         <div class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
-          <a class="d-flex justify-content-center" href=""
-            ><img class="soundImg" src="img/Sabana.png"
-          /></a>
+          <audio class="d-flex justify-content-center" id="audioFile3">
+            <source src="../Sounds/Salvaje/Sabana.mp3" type="audio/mpeg" />
+          </audio>
+          <script>
+            document.getElementById("audioFile3").controls = false;
+          </script>
+          <img
+            id="imagenControl3"
+            onclick="playPause3()"
+            class="IconImg"
+            src="img/Sabana.png"
+          />
           <h4 class="text-center">Sabana</h4>
         </div>
+
+        <!-- Boton Fondo Marino-->
         <div class="col-12 col-sm-6 col-md-4 col-lg-2 sound">
-          <a class="d-flex justify-content-center" href=""
-            ><img class="soundImg" src="img/FondoMarino.png"
-          /></a>
+          <audio class="d-flex justify-content-center" id="audioFile4">
+            <source src="../Sounds/Salvaje/FondoMarino.mp3" type="audio/mpeg" />
+          </audio>
+          <script>
+            document.getElementById("audioFile4").controls = false;
+          </script>
+          <img
+            id="imagenControl4"
+            onclick="playPause4()"
+            class="IconImg"
+            src="img/FondoMarino.png"
+          />
           <h4 class="text-center">Fondo marino</h4>
         </div>
+
+        <!-- Boton Bosque Nocturno-->
         <div class="col-12 col-sm-6 col-md-4 col-lg-2 sound">
-          <a class="d-flex justify-content-center" href=""
-            ><img class="soundImg" src="img/bosqueNocturno.png"
-          /></a>
+          <audio class="d-flex justify-content-center" id="audioFile5">
+            <source
+              src="../Sounds/Salvaje/BosqueNocturno.mp3"
+              type="audio/mpeg"
+            />
+          </audio>
+          <script>
+            document.getElementById("audioFile5").controls = false;
+          </script>
+          <img
+            id="imagenControl5"
+            onclick="playPause5()"
+            class="IconImg"
+            src="img/bosqueNocturno.png"
+          />
           <h4 class="text-center">Bosque nocturno</h4>
         </div>
       </div>
 
-      <!--
-            LIENZO
-            ESPACIADO
-            IMPORTANTE
-        -->
       <div class="row lienzo">
         <div
           class="col-12 col-sm-2 mx-0 col-md-2 d-flex justify-content-center"
         ></div>
       </div>
-
+      
+      <!--Botones de acceso directo a las otras secciones-->
       <div class="row">
         <div class="col-12 col-sm-3 col-md-4 ayuda">
-          <a class="d-flex justify-content-start" href="../Salud/Ayuda.html"
+          <a class="d-flex justify-content-start" href="../Salud/Salud.html"
             ><img class="footerImg" src="../img/Salud.png"
           /></a>
         </div>

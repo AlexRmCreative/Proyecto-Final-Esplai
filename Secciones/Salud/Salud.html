@@ -1,38 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!--CSS y Bootstrap-->
+    <!--<link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link rel="stylesheet" href="./css/EstiloNotificacion.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salud</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link rel="stylesheet" href="Salud.css">
-</head>
+    <link rel="stylesheet" href="../PlantillaSeccion.css" />
 
-<body background="img/FondoSalud.jpg">
+    <!-- JavasCript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mouse0270-bootstrap-notify/3.1.5/bootstrap-notify.min.js"></script>
+    <script src="./js/LlamadaNotificacion.js"></script>
+    <script src="./js/Salud.js"></script>
+  </head>
+  <body class="container w-100" background="img/FondoSalud.jpg">
+    <div class="container w-100">
+      <div class="row h-100 backB">
+        <!--Boton a la página princiapl-->
+        <div class="col-12 col-sm-4 col-md-2">
+          <a href="../../main.html"
+            ><img class="backImg" src="../img/Atras.png"
+          /></a>
+        </div>
+      </div>
 
-  <button>
-    <img src="img/Alimentación.png" class="soundImg rounded-circle"/>
-  </button>
-
-  <button>
-    <img src="img/Ejercicio.png" class="soundImg rounded-circle"/>
-  </button>
-
-  <button>
-    <img src="img/Mindfulness.png" class="soundImg rounded-circle"/>
-  </button>
-
-  <button>
-    <img src="img/Tecnologia.png" class="soundImg rounded-circle"/>
-  </button>
-
-  <button>
-    <img src="img/Yoga.png" class="soundImg rounded-circle"/>
-  </button>
-
-</body>
-
+      <!--Boton de introduccion-->
+      <div class="col-12 introduccion">
+        <a class="d-flex justify-content-center" href="#"
+          ><img
+            href=""
+            class="IconImg btn-introduccion"
+            src="img/Introduccion.png"
+        /></a>
+        <h4 class="text-center">introducción</h4>
+      </div>
+      <div class="row lienzo">
+        <div class="row d-flex justify-content-center align-items-center">
+          <!--Botones de consejos-->
+          <div class="col-12 col-sm-4 col-md-4 col-lg-2">
+            <a class="d-flex justify-content-center" href="#"
+              ><img class="IconImg btn-ejercicio" src="img/Ejercicio.png"
+            /></a>
+            <h4 class="text-center">Ejercicio</h4>
+          </div>
+          <div class="col-12 col-sm-4 col-md-4 col-lg-2">
+            <a class="d-flex justify-content-center" href="#"
+              ><img href="" class="IconImg btn-yoga" src="img/Yoga.png"
+            /></a>
+            <h4 class="text-center">Yoga</h4>
+          </div>
+          <div class="col-12 col-sm-4 col-md-4 col-lg-2">
+            <a class="d-flex justify-content-center" href="#"
+              ><img
+                href=""
+                class="IconImg btn-alimentacion"
+                src="img/Alimentación.png"
+            /></a>
+            <h4 class="text-center">Alimentación</h4>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <a class="d-flex justify-content-center" href="#"
+              ><img class="IconImg btn-tecnologia" src="img/Tecnologia.png"
+            /></a>
+            <h4 class="text-center">Tecnologia</h4>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <a class="d-flex justify-content-center" href="#"
+              ><img class="IconImg btn-mindfulness" src="img/Mindfulness.png"
+            /></a>
+            <h4 class="text-center">Mindfulness</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
