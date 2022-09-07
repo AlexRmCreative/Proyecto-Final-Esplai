@@ -1,7 +1,9 @@
 body{
     background-size: 100%;
 }
-
+.focus{
+    color: #ffffff;
+}
 .titulo{
     height: 23vh ;
     margin-top: 5vh;

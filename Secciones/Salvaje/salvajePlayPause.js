@@ -6,6 +6,8 @@ function playPause1() {
   if (estadoPlayer == "pause") {
     estadoPlayer = "play"; 
     audio.play();
+    audio.loop =true;
+    audio.playbackRate = 2;
     imagen.src = "./img/imgPause/bosquePause.png";
     imagen.className += " giro";
   } else {
@@ -22,6 +24,8 @@ function playPause2() {
 if (estadoPlayer == "pause") {
   estadoPlayer = "play"; 
   audio.play();
+  audio.loop =true;
+  audio.playbackRate = 2;
   imagen.src = "./img/imgPause/junglaPause.png";
   imagen.className += " giro";
 
@@ -39,6 +43,8 @@ function playPause3() {
 if (estadoPlayer == "pause") {
   estadoPlayer = "play"; 
   audio.play();
+  audio.loop =true;
+  audio.playbackRate = 2;
   imagen.src = "./img/imgPause/sabanaPause.png";
   imagen.className += " giro";
 } else {
@@ -55,6 +61,8 @@ function playPause4() {
 if (estadoPlayer == "pause") {
   estadoPlayer = "play"; 
   audio.play();
+  audio.loop =true;
+  audio.playbackRate = 2;
   imagen.src = "./img/imgPause/fondoMarinoPause.png";
   imagen.className += " giro";
 } else {
@@ -71,6 +79,8 @@ function playPause5() {
 if (estadoPlayer == "pause") {
   estadoPlayer = "play"; 
   audio.play();
+  audio.loop =true;
+  audio.playbackRate = 2;
   imagen.src = "./img/imgPause/bosqueNocturnoPause.png";
   imagen.className += " giro";
 } else {

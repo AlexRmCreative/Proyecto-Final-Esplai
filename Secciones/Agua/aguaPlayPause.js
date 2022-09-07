@@ -6,6 +6,8 @@ function playPause1() {
   if (estadoPlayer == "pause") {
     estadoPlayer = "play";
     audio.play();
+    audio.loop =true;
+  audio.playbackRate = 2;
     imagen.src = "./img/imgPause/lluviaPause.png";
     imagen.className += " giro";
   } else {
@@ -22,6 +24,8 @@ function playPause2() {
   if (estadoPlayer == "pause") {
     estadoPlayer = "play";
     audio.play();
+    audio.loop =true;
+    audio.playbackRate = 2;
     imagen.src = "./img/imgPause/rioPause.png";
     imagen.className += " giro";
   } else {
@@ -38,6 +42,8 @@ function playPause3() {
   if (estadoPlayer == "pause") {
     estadoPlayer = "play";
     audio.play();
+    audio.loop =true;
+    audio.playbackRate = 2;
     imagen.src = "./img/imgPause/olaPause.png";
     imagen.className += " giro";
   } else {
@@ -54,6 +60,8 @@ function playPause4() {
   if (estadoPlayer == "pause") {
     estadoPlayer = "play";
     audio.play();
+    audio.loop =true;
+    audio.playbackRate = 2;
     imagen.src = "./img/imgPause/oceanoPause.png";
     imagen.className += " giro";
   } else {
@@ -70,6 +78,8 @@ function playPause5() {
   if (estadoPlayer == "pause") {
     estadoPlayer = "play";
     audio.play();
+    audio.loop =true;
+    audio.playbackRate = 2;
     imagen.src = "./img/imgPause/goteoPause.png";
     imagen.className += " giro";
   } else {

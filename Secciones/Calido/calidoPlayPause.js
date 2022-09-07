@@ -6,6 +6,8 @@ function playPause1() {
   if (estadoPlayer == "pause") {
     estadoPlayer = "play"; 
     audio.play();
+    audio.loop =true;
+  audio.playbackRate = 2;
     imagen.src = "./img/imgPause/hogueraPause.png";
     imagen.className += " giro";
   } else {
@@ -22,6 +24,8 @@ function playPause2() {
 if (estadoPlayer == "pause") {
   estadoPlayer = "play"; 
   audio.play();
+  audio.loop =true;
+  audio.playbackRate = 2;
   imagen.src = "./img/imgPause/chimeneaPause.png";
   imagen.className += " giro";
 
@@ -39,6 +43,8 @@ function playPause3() {
 if (estadoPlayer == "pause") {
   estadoPlayer = "play"; 
   audio.play();
+  audio.loop =true;
+  audio.playbackRate = 2;
   imagen.src = "./img/imgPause/secadorPause.png";
   imagen.className += " giro";
 } else {
@@ -55,6 +61,8 @@ function playPause4() {
 if (estadoPlayer == "pause") {
   estadoPlayer = "play"; 
   audio.play();
+  audio.loop =true;
+  audio.playbackRate = 2;
   imagen.src = "./img/imgPause/microondasPause.png";
   imagen.className += " giro";
 } else {
@@ -71,6 +79,8 @@ function playPause5() {
 if (estadoPlayer == "pause") {
   estadoPlayer = "play"; 
   audio.play();
+  audio.loop =true;
+  audio.playbackRate = 2;
   imagen.src = "./img/imgPause/calefactorPause.png";
   imagen.className += " giro";
 } else {
