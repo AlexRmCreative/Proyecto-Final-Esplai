@@ -51,5 +51,24 @@
             </div>
         </div>
     </div>
+    <div id="hola"></div>
+	<!-- Habitualmente, es recomendable posicionar el código del JSON por debajo del código de HTML -->
+	<script>
+		async function fetchMoviesJSON() {
+				const response = await fetch('http://localhost:9090/section/3/media');
+				const jsonResponse = await response.json();
+				return jsonResponse;
+			}
+			fetchMoviesJSON().then(json => {
+				console.log(json); //json al completo
+				console.log(json.sectionName); //nombre de la section
+                console.log(json.media); // todos los elementos media
+                json.media.forEach(element => {
+                    console.log(element);
+                    document.getElementById("hola").innerHTML += element.urls;
+                });
+				// document.getElementById("hola").innerHTML = json.description;
+			});
+	</script>
 </body>
 </html>
