@@ -1,5 +1,8 @@
 var estadoPlayer = "pause";
 
+//Funciones para cambiar sonido play/pause y la imagen del boton
+
+//Funcion para el boton 1
 function playPause1() {
   var audio = document.getElementById("audioFile1");
   var imagen = document.getElementById("imagenControl1");
@@ -18,6 +21,7 @@ function playPause1() {
   }
 }
 
+//Funcion para el boton 2
 function playPause2() {
   var audio = document.getElementById("audioFile2");
   var imagen = document.getElementById("imagenControl2");
@@ -36,6 +40,7 @@ function playPause2() {
   }
 }
 
+//Funcion para el boton 3
 function playPause3() {
   var audio = document.getElementById("audioFile3");
   var imagen = document.getElementById("imagenControl3");
@@ -54,6 +59,7 @@ function playPause3() {
   }
 }
 
+//Funcion para el boton 4
 function playPause4() {
   var audio = document.getElementById("audioFile4");
   var imagen = document.getElementById("imagenControl4");
@@ -72,6 +78,7 @@ function playPause4() {
   }
 }
 
+//Funcion para el boton 5
 function playPause5() {
   var audio = document.getElementById("audioFile5");
   var imagen = document.getElementById("imagenControl5");
