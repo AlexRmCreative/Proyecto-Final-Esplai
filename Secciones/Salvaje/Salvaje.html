@@ -42,7 +42,7 @@
       <div class="row d-flex justify-content-center align-items-center">
 
         <!-- Boton Bosque-->
-        <div class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
+        <div id="bosque" class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
           <a>
           <audio class="d-flex justify-content-center" id="audioFile1">
             <source src="../Sounds/Salvaje/Bosque.mp3" type="audio/mpeg" />
@@ -61,7 +61,7 @@
         </div>
 
         <!-- Boton Jungla-->
-        <div class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
+        <div id="jungla" class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
           <a>
           <audio class="d-flex justify-content-center" id="audioFile2">
             <source src="../Sounds/Salvaje/Jungla.mp3" type="audio/mpeg" />
@@ -80,7 +80,7 @@
         </div>
 
         <!-- Boton Sabana-->
-        <div class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
+        <div id="sabana" class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
           <a>
           <audio class="d-flex justify-content-center" id="audioFile3">
             <source src="../Sounds/Salvaje/Sabana.mp3" type="audio/mpeg" />
@@ -99,7 +99,7 @@
         </div>
 
         <!-- Boton Fondo Marino-->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2 sound">
+        <div id="fondoMarino" class="col-12 col-sm-6 col-md-4 col-lg-2 sound">
           <a>
           <audio class="d-flex justify-content-center" id="audioFile4">
             <source src="../Sounds/Salvaje/FondoMarino.mp3" type="audio/mpeg" />
@@ -118,7 +118,7 @@
         </div>
 
         <!-- Boton Bosque Nocturno-->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2 sound">
+        <div id="bosqueNocturno" class="col-12 col-sm-6 col-md-4 col-lg-2 sound">
           <a>
           <audio class="d-flex justify-content-center" id="audioFile5">
             <source
@@ -146,34 +146,38 @@
         ></div>
       </div>
       
-      <!--Botones de acceso directo a las otras secciones-->
+      <!--Botones de acceso directo (AC)-->
       <div class="row">
+
+        <!--Boton AC a seccion Salud-->
         <div class="col-12 col-sm-3 col-md-4 salud">
-          <a class="d-flex justify-content-start" href="../Salud/Salud.html"
-            ><img class="footerImg" src="../img/Salud.png"
-          /></a>
+          <a class="d-flex justify-content-start" href="../Salud/Salud.html">
+            <img class="footerImg" src="../img/Salud.png"/>
+          </a>
         </div>
+
+        <!--Boton AC a seccion Calido-->
         <div
-          class="col-12 col-sm-2 mx-0 col-md-1 d-flex justify-content-center terceros"
-        >
-          <a class="d-flex justify-content-center" href="../Calido/Calido.html"
-            ><img class="footerImg" src="../img/Calido.png"
-          /></a>
+          class="col-12 col-sm-2 mx-0 col-md-1 d-flex justify-content-center terceros">
+          <a class="d-flex justify-content-center" href="../Calido/Calido.html">
+            <img class="footerImg" src="../img/Calido.png"/>
+          </a>
         </div>
-        <div
-          class="col-12 col-sm-1 mx-0 col-md-1 d-flex justify-content-center terceros"
-        >
-          <a class="d-flex justify-content-center" href="../Agua/Agua.html"
-            ><img class="footerImg" src="../img/Agua.png"
-          /></a>
+
+        <!--Boton AC a seccion Agua-->
+        <div class="col-12 col-sm-1 mx-0 col-md-1 d-flex justify-content-center terceros">
+          <a class="d-flex justify-content-center" href="../Agua/Agua.html">
+            <img class="footerImg" src="../img/Agua.png"/>
+          </a>
         </div>
-        <div
-          class="col-12 col-sm-2 mx-0 col-md-1 d-flex justify-content-center terceros"
-        >
-          <a class="d-flex justify-content-center" href="../Aire/Aire.html"
-            ><img class="footerImg" src="../img/aire.png"
-          /></a>
+
+        <!--Boton AC a seccion Aire-->
+        <div class="col-12 col-sm-2 mx-0 col-md-1 d-flex justify-content-center terceros">
+          <a class="d-flex justify-content-center" href="../Aire/Aire.html">
+            <img class="footerImg" src="../img/aire.png"/>
+          </a>
         </div>
+        
       </div>
     </div>
   </body>

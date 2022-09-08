@@ -36,16 +36,15 @@
           class="col-12 col-sm-2 mx-0 col-md-2 d-flex justify-content-center"
         ></div>
       </div>
+
       <!-- Botones de Audios-->
       <div class="row d-flex justify-content-center align-items-center">
+        
         <!-- Boton Aire Acondicionado-->
-        <div class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
+        <div id="aireAcondicionado" class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
           <a>
           <audio class="d-flex justify-content-center" id="audioFile1">
-            <source
-              src="../Sounds/Aire/AireAcondicionado.mp3"
-              type="audio/mpeg"
-            />
+            <source src="../Sounds/Aire/AireAcondicionado.mp3" type="audio/mpeg"/>
           </audio>
           <script>
             document.getElementById("audioFile1").controls = false;
@@ -61,7 +60,7 @@
         </div>
 
         <!-- Boton Tormenta-->
-        <div class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
+        <div id="Tormenta" class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
           <a>
           <audio class="d-flex justify-content-center" id="audioFile2">
             <source src="../Sounds/Aire/Blizzard.mp3" type="audio/mpeg" />
@@ -80,7 +79,7 @@
         </div>
 
         <!-- Boton Ventilador-->
-        <div class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
+        <div id="ventilador" class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
           <a>
           <audio class="d-flex justify-content-center" id="audioFile3">
             <source src="../Sounds/Aire/Ventilador.mp3" type="audio/mpeg" />
@@ -99,7 +98,7 @@
         </div>
 
         <!-- Boton Ventisca-->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2 sound">
+        <div id="ventisca" class="col-12 col-sm-6 col-md-4 col-lg-2 sound">
           <a>
           <audio class="d-flex justify-content-center" id="audioFile4">
             <source src="../Sounds//Aire/Ventisca.mp3" type="audio/mpeg" />
@@ -118,7 +117,7 @@
         </div>
 
         <!-- Boton Viento-->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2 sound">
+        <div id="viento" class="col-12 col-sm-6 col-md-4 col-lg-2 sound">
           <a>
           <audio class="d-flex justify-content-center" id="audioFile5">
             <source src="../Sounds//Aire/Viento.mp3" type="audio/mpeg" />
@@ -147,36 +146,38 @@
         ></div>
       </div>
 
-      <!--Botones de acceso directo-->
+      <!--Botones de acceso directo (AC)-->
       <div class="row">
+
+        <!--Boton AC a seccion Salud-->
         <div class="col-12 col-sm-3 col-md-4 salud">
-          <a class="d-flex justify-content-start" href="../Salud/Salud.html"
-            ><img class="footerImg" src="../img/Salud.png"
-          /></a>
+          <a class="d-flex justify-content-start" href="../Salud/Salud.html">
+            <img class="footerImg" src="../img/Salud.png"/>
+          </a>
         </div>
+
+        <!--Boton AC a seccion Calido-->
+        <div class="col-12 col-sm-2 mx-0 col-md-1 d-flex justify-content-center terceros">
+          <a class="d-flex justify-content-center" href="../Calido/Calido.html">
+            <img class="footerImg" src="../img/Calido.png"/>
+          </a>
+        </div>
+
+        <!--Boton AC a seccion Salvaje-->
         <div
-          class="col-12 col-sm-2 mx-0 col-md-1 d-flex justify-content-center terceros"
-        >
-          <a class="d-flex justify-content-center" href="../Calido/Calido.html"
-            ><img class="footerImg" src="../img/Calido.png"
-          /></a>
+          class="col-12 col-sm-1 mx-0 col-md-1 d-flex justify-content-center terceros">
+          <a class="d-flex justify-content-center" href="../Salvaje/Salvaje.html">
+            <img class="footerImg" src="../img/Salvaje.png"/>
+          </a>
         </div>
-        <div
-          class="col-12 col-sm-1 mx-0 col-md-1 d-flex justify-content-center terceros"
-        >
-          <a
-            class="d-flex justify-content-center"
-            href="../Salvaje/Salvaje.html"
-            ><img class="footerImg" src="../img/Salvaje.png"
-          /></a>
+
+        <!--Boton AC a seccion Agua-->
+        <div class="col-12 col-sm-2 mx-0 col-md-1 d-flex justify-content-center terceros">
+          <a class="d-flex justify-content-center" href="../Agua/Agua.html">
+            <img class="footerImg" src="../img/Agua.png"/>
+          </a>
         </div>
-        <div
-          class="col-12 col-sm-2 mx-0 col-md-1 d-flex justify-content-center terceros"
-        >
-          <a class="d-flex justify-content-center" href="../Agua/Agua.html"
-            ><img class="footerImg" src="../img/Agua.png"
-          /></a>
-        </div>
+        
       </div>
     </div>
   </body>
