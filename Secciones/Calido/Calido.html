@@ -11,11 +11,7 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../PlantillaSeccion.css" />
-
-    <!--JavaScript-->
-    <script src="./calidoPlayPause.js"></script>
-
+    <link rel="stylesheet" href="../css/PlantillaSeccion.css" />
   </head>
   <body class="container w-100" background="img/FondoCalido.jpg">
     <div class="container w-100">
@@ -38,21 +34,23 @@
         ></div>
       </div>
 
+      <!-- Codigo para la funcion de PlayPause para los sonidos en los botones-->
+      <audio class="d-flex justify-content-center" id="audioFile">
+        <source src="" type="audio/mpeg"/>
+      </audio>
+      <script>
+        document.getElementById("audioFile").controls = false;
+      </script>
+
       <!-- Botones de Audios-->
       <div class="row d-flex justify-content-center align-items-center">
 
         <!-- Boton Hoguera-->
         <div id="hoguera" class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
           <a>
-          <audio class="d-flex justify-content-center" id="audioFile1">
-            <source src="../Sounds/Calido/Hoguera.mp3" type="audio/mpeg" />
-          </audio>
-          <script>
-            document.getElementById("audioFile1").controls = false;
-          </script>
           <img
-            id="imagenControl1"
-            onclick="playPause1()"
+            id="imgControlHoguera"
+            onclick="playPauseCalido(1)"
             class="IconImg"
             src="./img/hoguera.png"
           />
@@ -63,15 +61,9 @@
         <!-- Boton Chimenea-->
         <div id="chimenea" class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
           <a>
-          <audio class="d-flex justify-content-center" id="audioFile2">
-            <source src="../Sounds/Calido/Chimenea.mp3" type="audio/mpeg" />
-          </audio>
-          <script>
-            document.getElementById("audioFile2").controls = false;
-          </script>
           <img
-            id="imagenControl2"
-            onclick="playPause2()"
+            id="imgControlChimenea"
+            onclick="playPauseCalido(2)"
             class="IconImg"
             src="img/chimenea.png"
           />
@@ -82,17 +74,11 @@
         <!-- Boton Secador-->
         <div id="secador" class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
           <a>
-          <audio class="d-flex justify-content-center" id="audioFile3">
-            <source src="../Sounds/Calido/Secador.mp3" type="audio/mpeg" />
-          </audio>
-          <script>
-            document.getElementById("audioFile3").controls = false;
-          </script>
           <img
-            id="imagenControl3"
-            onclick="playPause3()"
+            id="imgControlSecador"
+            onclick="playPauseCalido(3)"
             class="IconImg"
-            src="img/Secador.png"
+            src="img/secador.png"
           />
           </a>
           <h4 class="text-center">Secador</h4>
@@ -101,15 +87,9 @@
         <!--Boton Microondas-->
         <div id="microondas" class="col-12 col-sm-6 col-md-4 col-lg-2 sound">
           <a>
-          <audio class="d-flex justify-content-center" id="audioFile4">
-            <source src="../Sounds/Calido/Microondas.mp3" type="audio/mpeg" />
-          </audio>
-          <script>
-            document.getElementById("audioFile4").controls = false;
-          </script>
           <img
-            id="imagenControl4"
-            onclick="playPause4()"
+            id="imgControlMicroondas"
+            onclick="playPauseCalido(4)"
             class="IconImg"
             src="img/microondas.png"
           />
@@ -127,10 +107,10 @@
             document.getElementById("audioFile5").controls = false;
           </script>
           <img
-            id="imagenControl5"
-            onclick="playPause5()"
+            id="imgControlCalefactor"
+            onclick="playPauseCalido(5)"
             class="IconImg"
-            src="img/Calefactor.png"
+            src="img/calefactor.png"
           />
           </a>
           <h4 class="text-center">Calefactor</h4>
@@ -180,5 +160,8 @@
         
       </div>
     </div>
+
+    <!--JavaScript-->
+    <script src="./js/playPauseCalido.js"></script>
   </body>
 </html>

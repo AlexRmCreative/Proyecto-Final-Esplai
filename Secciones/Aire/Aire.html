@@ -11,10 +11,8 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../PlantillaSeccion.css" />
+    <link rel="stylesheet" href="../css/PlantillaSeccion.css" />
 
-    <!--JavaScript-->
-    <script src="./airePlayPause.js"></script>
   </head>
   <body class="container w-100" background="img/FondoAire.jpg">
     <div class="container w-100">
@@ -37,23 +35,25 @@
         ></div>
       </div>
 
+      <!-- Codigo para la funcion de PlayPause para los sonidos en los botones-->
+      <audio class="d-flex justify-content-center" id="audioFile">
+        <source src="" type="audio/mpeg"/>
+      </audio>
+      <script>
+        document.getElementById("audioFile").controls = false;
+      </script>
+
       <!-- Botones de Audios-->
       <div class="row d-flex justify-content-center align-items-center">
         
         <!-- Boton Aire Acondicionado-->
         <div id="aireAcondicionado" class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
           <a>
-          <audio class="d-flex justify-content-center" id="audioFile1">
-            <source src="../Sounds/Aire/AireAcondicionado.mp3" type="audio/mpeg"/>
-          </audio>
-          <script>
-            document.getElementById("audioFile1").controls = false;
-          </script>
           <img
-            id="imagenControl1"
-            onclick="playPause1()"
+            id="imgControlAireAcondicionado"
+            onclick="playPauseAire(1)"
             class="IconImg"
-            src="./img/AireAcondicionado.png"
+            src="./img/aireAcondicionado.png"
           />
           </a>
           <h4 class="text-center">Acondicionado</h4>
@@ -62,17 +62,11 @@
         <!-- Boton Tormenta-->
         <div id="Tormenta" class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
           <a>
-          <audio class="d-flex justify-content-center" id="audioFile2">
-            <source src="../Sounds/Aire/Blizzard.mp3" type="audio/mpeg" />
-          </audio>
-          <script>
-            document.getElementById("audioFile2").controls = false;
-          </script>
           <img
-            id="imagenControl2"
-            onclick="playPause2()"
+            id="imgControlTormenta"
+            onclick="playPauseAire(2)"
             class="IconImg"
-            src="img/blizzard.png"
+            src="img/tormenta.png"
           />
           </a>
           <h4 class="text-center">Tormenta</h4>
@@ -81,15 +75,9 @@
         <!-- Boton Ventilador-->
         <div id="ventilador" class="col-12 col-sm-4 col-md-4 col-lg-2 sound">
           <a>
-          <audio class="d-flex justify-content-center" id="audioFile3">
-            <source src="../Sounds/Aire/Ventilador.mp3" type="audio/mpeg" />
-          </audio>
-          <script>
-            document.getElementById("audioFile3").controls = false;
-          </script>
           <img
-            id="imagenControl3"
-            onclick="playPause3()"
+            id="imgControlVentilador"
+            onclick="playPauseAire(3)"
             class="IconImg"
             src="img/ventilador.png"
           />
@@ -100,17 +88,11 @@
         <!-- Boton Ventisca-->
         <div id="ventisca" class="col-12 col-sm-6 col-md-4 col-lg-2 sound">
           <a>
-          <audio class="d-flex justify-content-center" id="audioFile4">
-            <source src="../Sounds//Aire/Ventisca.mp3" type="audio/mpeg" />
-          </audio>
-          <script>
-            document.getElementById("audioFile4").controls = false;
-          </script>
           <img
-            id="imagenControl4"
-            onclick="playPause4()"
+            id="imgControlVentisca"
+            onclick="playPauseAire(4)"
             class="IconImg"
-            src="img/Ventisca.png"
+            src="img/ventisca.png"
           />
           </a>
           <h4 class="text-center">Ventisca</h4>
@@ -119,17 +101,11 @@
         <!-- Boton Viento-->
         <div id="viento" class="col-12 col-sm-6 col-md-4 col-lg-2 sound">
           <a>
-          <audio class="d-flex justify-content-center" id="audioFile5">
-            <source src="../Sounds//Aire/Viento.mp3" type="audio/mpeg" />
-          </audio>
-          <script>
-            document.getElementById("audioFile5").controls = false;
-          </script>
           <img
-            id="imagenControl5"
-            onclick="playPause5()"
+            id="imgControlViento"
+            onclick="playPauseAire(5)"
             class="IconImg"
-            src="img/Viento.png"
+            src="img/viento.png"
           />
           </a>
           <h4 class="text-center">Viento</h4>
@@ -177,8 +153,10 @@
             <img class="footerImg" src="../img/Agua.png"/>
           </a>
         </div>
-        
       </div>
     </div>
+
+    <!--JavaScript-->
+    <script src="./js/playPauseAire.js"></script>
   </body>
 </html>

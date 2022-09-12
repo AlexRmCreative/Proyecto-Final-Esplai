@@ -27,24 +27,8 @@ a.button{
     -o-border-radius: 50%;
 }
 
-.circle {
-    /*aparienciaderedonda/circulo*/
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    margin-right: 55px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    background-color: #dde1e7;
-    box-shadow: 5px 5px 8px #cbcfd5, -5px -5px 8px #eff3f9;
-}
-/*
-.circle:hover {
-    box-shadow: inset 5px 5px 8px #cbcfd5, inset -5px -5px 8px #eff3f9;
-}
-*/
+
+
 #ListaDeBotones {
     display: flex;
     justify-content: center;
