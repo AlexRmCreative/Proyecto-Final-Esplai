@@ -1,6 +1,57 @@
-button,
-input[type="submit"],
-input[type="reset"] {
+@import url(https://fonts.googleapis.com/css2?family=Inconsolata:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+img{
+    height: 10vh;
+    width: 10vh;
+}
+
+/* The animation code */
+@keyframes aparecerAumentando {
+    from { opacity: 0; transform: scale(0.25); -webkit-transform: scale(0.25); -moz-transform: scale(0.25); -ms-transform: scale(0.25); -o-transform: scale(0.25); }
+    to { opacity: 100; transform:scale(1) ; -webkit-transform:scale(1) ; -moz-transform:scale(1) ; -ms-transform:scale(1) ; -o-transform:scale(1) ; }
+}
+
+.lienzo{
+    height: 5.5vh;
+}
+
+.notifySpace{
+    display: flex;
+    justify-content: center;
+}
+.notificacionStyle{
+    animation-name: aparecerAumentando;
+    animation-duration: 1s;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: #90c455;
+    border-radius: 5vh;
+    -webkit-border-radius: 5vh;
+    -moz-border-radius: 5vh;
+    -ms-border-radius: 5vh;
+    -o-border-radius: 5vh;
+}
+
+.notificacionContent{
+    width: 96.5%;
+    margin: 1vh;
+    background-color: #9fd95c;
+    border-radius: 5vh;
+    -webkit-border-radius: 5vh;
+    -moz-border-radius: 5vh;
+    -ms-border-radius: 5vh;
+    -o-border-radius: 5vh;
+}
+
+p.notificacionContent{
+    text-align: center;
+    font-size: 15px;
+    font-family: Inconsolata;
+    color: white;
+}
+
+button,input[type="submit"], input[type="reset"] {
     background: none;
     color: inherit;
     border: none;
@@ -34,14 +85,12 @@ img {
 
 @media only screen and (max-width: 600px) {
     .notifyIcon {
-        height: 25vh;
         width: 100%;
         display: flex;
         justify-content: start;
     }
 
     .notifySpace {
-        height: 25vh;
         width: 100%;
         display: flex;
         justify-content: start;
@@ -62,14 +111,12 @@ img {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .notifyIcon {
-        height: 25vh;
         width: 100%;
         display: flex;
         justify-content: start;
     }
 
     .notifySpace {
-        height: 25vh;
         width: 100%;
         display: flex;
         justify-content: start;
@@ -90,15 +137,11 @@ img {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .notifyIcon {
-        height: 25vh;
-        width: 100%;
         display: flex;
         justify-content: start;
     }
 
     .notifySpace {
-        height: 25vh;
-        width: 100%;
         display: flex;
         justify-content: start;
     }
@@ -117,14 +160,10 @@ img {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .notifyIcon {
-        height: 17vh;
-        width: 20%;
         justify-content: center;
     }
 
     .notifySpace {
-        height: 17vh;
-        width: 20%;
         justify-content: center;
     }
 
@@ -143,14 +182,10 @@ img {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .notifyIcon {
-        height: 17vh;
-        width: 20%;
         justify-content: center;
     }
 
     .notifySpace {
-        height: 17vh;
-        width: 20%;
         justify-content: center;
     }
 
@@ -158,10 +193,5 @@ img {
         display: flex;
         justify-content: center;
         width: 80%;
-    }
-
-    button {
-        justify-self: start;
-        justify-content: start;
     }
 }
