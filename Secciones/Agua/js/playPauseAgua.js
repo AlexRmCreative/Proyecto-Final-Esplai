@@ -21,18 +21,40 @@ function paraDeGirar() {
   imagen5.classList.remove("giro");
 }
 
-//Funcion para cambiar sonido play/pause y la imagen del boton
+/* Llamada a la API 🎹🔥 */
+const audiosSRC = [];
+const descriptions = [];
+const url = "http://localhost:9090/section/3/media";
 
+async function fetchMoviesJSON() {
+  const response = await fetch(url);
+  const jsonResponse = await response.json();
+  return jsonResponse;
+}
+
+fetchMoviesJSON().then((json) => {
+  for (const element of json.media) {
+    audiosSRC.push(element.urls);
+    descriptions.push(element.description);
+  }
+  document.getElementById("agua-1").innerText = descriptions[0];
+  document.getElementById("agua-2").innerText = descriptions[1];
+  document.getElementById("agua-3").innerText = descriptions[2];
+  document.getElementById("agua-4").innerText = descriptions[3];
+  document.getElementById("agua-5").innerText = descriptions[4];
+});
+
+//Funcion para cambiar sonido play/pause y la imagen del boton
 function playPauseAgua(botonAudio) {
   var audio = document.getElementById("audioFile");
-  if (botonSonando != botonAudio){
-      
+  if (botonSonando != botonAudio) {
     estadoPlayer = "pause";
   }
 
   switch (botonAudio) {
     case 1:
-      audio.src = "../Agua/sounds/lluvia.mp3";
+      audio.src = audiosSRC[0];
+
       var imagen = document.getElementById("imgControlLluvia");
       if (estadoPlayer == "pause") {
         paraDeGirar();
@@ -52,7 +74,7 @@ function playPauseAgua(botonAudio) {
       break;
 
     case 2:
-      audio.src = "../Agua/sounds/rio.mp3";
+      audio.src = audiosSRC[1];
       var imagen = document.getElementById("imgControlRio");
       if (estadoPlayer == "pause") {
         paraDeGirar();
@@ -72,7 +94,7 @@ function playPauseAgua(botonAudio) {
       break;
 
     case 3:
-      audio.src = "../Agua/sounds/olas.mp3";
+      audio.src = audiosSRC[2];
       var imagen = document.getElementById("imgControlOlas");
       if (estadoPlayer == "pause") {
         paraDeGirar();
@@ -92,7 +114,7 @@ function playPauseAgua(botonAudio) {
       break;
 
     case 4:
-      audio.src = "../Agua/sounds/oceano.mp3";
+      audio.src = audiosSRC[3];
       var imagen = document.getElementById("imgControlOceano");
       if (estadoPlayer == "pause") {
         paraDeGirar();
@@ -112,7 +134,7 @@ function playPauseAgua(botonAudio) {
       break;
 
     case 5:
-      audio.src = "../Agua/sounds/goteo.mp3";
+      audio.src = audiosSRC[0];
       var imagen = document.getElementById("imgControlGoteo");
       if (estadoPlayer == "pause") {
         paraDeGirar();
@@ -131,4 +153,10 @@ function playPauseAgua(botonAudio) {
       }
       break;
   }
+}
+
+function play(sound) {
+  var audio = document.getElementById("audioFile");
+  audio.src = sound;
+  audio.play();
 }
