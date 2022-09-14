@@ -21,6 +21,29 @@ function paraDeGirar() {
   imagen5.classList.remove("giro");
 }
 
+/* Llamada a la API 🎹🔥 */
+const audiosAgua = [];
+const descriptions = [];
+const url = "http://localhost:9090/section/1/media";
+
+async function fetchMoviesJSON() {
+  const response = await fetch(url);
+  const jsonResponse = await response.json();
+  return jsonResponse;
+}
+
+fetchMoviesJSON().then((json) => {
+  for (const element of json.media) {
+    audiosCalido.push(element.urls);
+    descriptions.push(element.description);
+  }
+  document.getElementById("calido-0").innerText = descriptions[0];
+  document.getElementById("calido-1").innerText = descriptions[1];
+  document.getElementById("calido-2").innerText = descriptions[2];
+  document.getElementById("calido-3").innerText = descriptions[3];
+  document.getElementById("calido-4").innerText = descriptions[4];
+});
+
 //Funcion para cambiar sonido play/pause y la imagen del boton
 
 function playPauseCalido(botonAudio) {
@@ -32,7 +55,7 @@ function playPauseCalido(botonAudio) {
 
   switch (botonAudio) {
     case 1:
-      audio.src = "../Calido/sounds/hoguera.mp3";
+      audio.src = audiosCalido[0];
       var imagen = document.getElementById("imgControlHoguera");
       if (estadoPlayer == "pause") {
         paraDeGirar();
@@ -52,7 +75,7 @@ function playPauseCalido(botonAudio) {
       break;
 
     case 2:
-      audio.src = "../Calido/sounds/chimenea.mp3";
+      audio.src = audiosCalido[1];
       var imagen = document.getElementById("imgControlChimenea");
       if (estadoPlayer == "pause") {
         paraDeGirar();
@@ -72,7 +95,7 @@ function playPauseCalido(botonAudio) {
       break;
 
     case 3:
-      audio.src = "../Calido/sounds/secador.mp3";
+      audio.src = audiosCalido[2];
       var imagen = document.getElementById("imgControlSecador");
       if (estadoPlayer == "pause") {
         paraDeGirar();
@@ -92,7 +115,7 @@ function playPauseCalido(botonAudio) {
       break;
 
     case 4:
-      audio.src = "../Calido/sounds/microondas.mp3";
+      audio.src = audiosCalido[3];
       var imagen = document.getElementById("imgControlMicroondas");
       if (estadoPlayer == "pause") {
         paraDeGirar();
@@ -112,7 +135,7 @@ function playPauseCalido(botonAudio) {
       break;
 
     case 5:
-      audio.src = "../Calido/sounds/calefactor.mp3";
+      audio.src = audiosCalido[4];
       var imagen = document.getElementById("imgControlCalefactor");
       if (estadoPlayer == "pause") {
         paraDeGirar();
