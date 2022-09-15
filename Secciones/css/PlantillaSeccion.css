@@ -2,8 +2,8 @@
   margin-top: 2vh;
 }
 
-.introduccion{
-  margin-top: 5vh; 
+.introduccion {
+  margin-top: 5vh;
   margin-bottom: 7vh;
 }
 
@@ -13,11 +13,11 @@
   align-content: right;
 }
 
-.IconImg{
+.IconImg {
   width: 17vh;
   height: 17vh;
   border-radius: 90vh;
-  
+
   -webkit-border-radius: 90vh;
   -moz-border-radius: 90vh;
   -ms-border-radius: 90vh;
@@ -30,17 +30,19 @@
   align-content: center;
   margin-right: 5vh !important;
 }
+
 .backImg {
   width: 13vh;
   height: 13vh;
   border-radius: 90vh;
   background: linear-gradient(145deg);
+  transition: 2s;
   -webkit-transition: 2s;
   -moz-transition: 2s;
   -ms-transition: 2s;
   -o-transition: 2s;
-  
 }
+
 img {
   transition: 2s;
   -webkit-transition: 2s;
@@ -49,10 +51,11 @@ img {
   -o-transition: 2s;
 }
 
-.giro{
+.giro {
   transform: translateX(0px) rotateZ(0deg);
   animation: rotar 2s linear infinite;
 }
+
 @keyframes rotar {
   100% {
     transform: translateX(0px) rotateZ(360deg);
@@ -72,6 +75,7 @@ img:hover {
   width: 13vh;
   height: 13vh;
   border-radius: 90vh;
+  transition: 2s;
   -webkit-transition: 2s;
   -moz-transition: 2s;
   -ms-transition: 2s;
@@ -81,39 +85,47 @@ img:hover {
 .lienzo {
   height: 21vh;
 }
+
 @media (max-width: 575.98px) {
   .salud {
     display: flex;
     justify-content: center;
   }
+
   .lienzo {
     height: 0vh;
   }
+
   .back,
   .backImg,
   a {
     display: flex;
     justify-content: center;
   }
+
   .backImg {
     width: 13vh;
     height: 13vh;
   }
+
   .IconImg {
     width: 16vh;
     height: 16vh;
   }
- 
+
   .footerImg {
     width: 13vh;
     height: 13vh;
   }
+
   h4 {
     font-size: 2vh;
   }
-  .introduccion{
+
+  .introduccion {
     margin-top: 1vh;
-    margin-bottom: 0vh; 
+    margin-bottom: 0vh;
+  }
+
+
 }
-
-

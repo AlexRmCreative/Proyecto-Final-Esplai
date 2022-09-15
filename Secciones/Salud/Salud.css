@@ -1,10 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Inconsolata:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
 
-img{
-    height: 10vh;
-    width: 10vh;
-}
-
 /* The animation code */
 @keyframes aparecerAumentando {
     from { opacity: 0; transform: scale(0.25); -webkit-transform: scale(0.25); -moz-transform: scale(0.25); -ms-transform: scale(0.25); -o-transform: scale(0.25); }
@@ -69,8 +64,10 @@ button,input[type="submit"], input[type="reset"] {
 }
 
 img {
-    width: 13vh;
-    height: 13vh;
+    text-align: center;
+    display: center;
+    justify-content: center;
+    height: 12vh;
     border-radius: 90vh;
 }
 
