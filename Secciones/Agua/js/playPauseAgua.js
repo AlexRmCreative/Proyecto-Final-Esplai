@@ -45,6 +45,7 @@ fetchAudiosJSON().then((json) => {
 });
 
 //Funcion para cambiar sonido play/pause y la imagen del boton
+
 function playPauseAgua(botonAudio) {
   var audio = document.getElementById("audioFile");
   if (botonSonando != botonAudio) {

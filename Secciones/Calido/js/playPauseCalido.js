@@ -22,7 +22,7 @@ function paraDeGirar() {
 }
 
 /* Llamada a la API 🎹🔥 */
-const audiosAgua = [];
+const audiosCalido = [];
 const descriptions = [];
 const url = "http://localhost:9090/section/1/media";
 
@@ -49,7 +49,6 @@ fetchAudiosJSON().then((json) => {
 function playPauseCalido(botonAudio) {
   var audio = document.getElementById("audioFile");
   if (botonSonando != botonAudio){
-      
     estadoPlayer = "pause";
   }
 
