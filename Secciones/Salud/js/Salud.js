@@ -1,144 +1,274 @@
-var introduccion = new Array ();
-introduccion[0] = "<h2>Ayuda para gestionar el estrés y la ansiedad</h2>\
-<p>\
-  El objetivo de esta página no es más que ayudar con aquellas acciones\
-  que podemos llevar a cabo y que serán beneficiosos para tu bienestar y\
-  físico y mental.\
-</p>\
-<p>\
-  El estrés y la ansiedad, causado por diversos factores externos de\
-  nuestro entorno, se ha convertido en nuestro compañero del día a día,\
-  pudiéndonos causar diversos síntomas como:\
-</p>\
-<ul>\
-  <li>Dolor de cabeza</li>\
-  <li>Presión en el pecho</li>\
-  <li>Subida de la tensión arterial</li>\
-  <li>Taquicardias</li>\
-  <li>Mareos</li>\
-  <li>Fatiga</li>\
-  <li>Insomnio</li>\
-</ul>\
-<p>\
-  Hay maneras naturales de poder reducir el estrés y la ansiedad sin\
-  necesidad de acudir a químicos o productos milagrosos.\
-</p>";
-introduccion[1] = "<h2>Corpore sano in mens sana (¿o era al revés?)</h2>\
-<p>\
-  Es importante mantener una buena salud mental para que pueda el cuerpo\
-  funcionar óptimamente, ya que, si tu vida esta invadida por el estrés\
-  y la ansiedad, no es extraño que esto te afecte a tu salud física.\
-</p>\
-<p>\
-  Al padecer estrés y ansiedad, nuestro cuerpo produce una hormona\
-  llamada cortisol. La liberación prolongada de esta hormona durante\
-  demasiado tiempo, acaba afectando a todos los órganos del cuerpo,\
-  generando alteraciones en todos ellos y, en consecuencia, la posible\
-  aparición de enfermedades en el futuro, sobre todo las relacionas con\
-  el sistema circulatorio.\
-</p>\
-<p>\
-  ¡No siempre podremos permitirnos el lujo de alejarnos de esos factores\
-  externos que nos general estrés y ansiedad, pero sí podemos hacer las\
-  acciones que encontrarás en esta web para mantener en buen equilibrio\
-  nuestra mente y cuerpo!\
-</p>";
+var maxNotiNumber = [0,0,0,0,0,0];
+var notificacionNumber = [0,0,0,0,0,0];
+function generarNotificacion(idType = ""){
+    /*document.querySelector("div .notifySpace").appendChild(notificacion);
+    notificacion.className = "notificacionStyle";
+    document.querySelector("div .notificacionStyle").appendChild(contentNotificacion);
+    contentNotificacion.className = "notificacionContent";
+    document.querySelector(".notificacionContent").innerHTML = "MI NOMBRE ES ALEJANDRO lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+    */
+    var notificador = document.querySelectorAll(".notifySpace"); //4
+    let ids = ["Alimentacion", "Ejercicio", "Mindfulness", "Yoga", "Tecnologia", "Introduccion"];
+    
+    if(idType == ids[0] && maxNotiNumber[0] <= 5)
+    {
+        maxNotiNumber[0]++;
+        setTimeout(() => {
+            maxNotiNumber[0]--;
+        }, 12000);
+    }
+    if(idType == ids[1] && maxNotiNumber[1] <= 5)
+    {
+        maxNotiNumber[1]++;
+        setTimeout(() => {
+            maxNotiNumber[1]--;
+        }, 12000);
+    }
+    if(idType == ids[2] && maxNotiNumber[2] <= 5)
+    {
+        maxNotiNumber[2]++;
+        setTimeout(() => {
+            maxNotiNumber[2]--;
+        }, 12000);
+    }
+    if(idType == ids[3] && maxNotiNumber[3] <= 5)
+    {
+        maxNotiNumber[3]++;
+        setTimeout(() => {
+            maxNotiNumber[3]--;
+        }, 12000);
+    }
+    if(idType == ids[4] && maxNotiNumber[4] <= 5)
+    {
+        maxNotiNumber[4]++;
+        setTimeout(() => {
+            maxNotiNumber[4]--;
+        }, 12000);
+    }
+    if(idType == ids[5] && maxNotiNumber[5] <= 5)
+    {
+        maxNotiNumber[5]++;
+        setTimeout(() => {
+            maxNotiNumber[5]--;
+        }, 12000);
+    }
 
-var ejercicio = new Array ();
-ejercicio[0] = "<p>\
-Realizar ejercicio físico (se recomienda realizar 30 minutos diarios\
-como mínimo) hace que nuestro se vuelva más sano y fuerte.\
-</p>";
-ejercicio[1] = "<p>\
-Manteniendo nuestro cuerpo en movimiento diario, sentiremos fatiga con\
-menos facilidad, pudiendo realizar nuestro dia a dia sin sensación de\
-ahogo.\
-</p>";
-ejercicio[2] = "<p>\
-Realizar ejercicio físico no tiene que ser necesariamente salir a\
-correr ni hacer grandes esfuerzos. En realidad, con salir a caminar,\
-bailar en casa, un paseo en bici es mas que suficiente para mantener\
-activo tu cuerpo.\
-</p>";
-ejercicio[3] = "<p>\
-No hay que sobrecargar al cuerpo con exceso de ejercicio, sobre todo\
-si no estas acostumbrado/a y siguiendo las recomendaciones de tu\
-médico en caso de tener algún problema de salud.\
-</p>";
 
-var yoga = new Array ();
-yoga[0] = " <p>\
-El yoga es una actividad en la que tiene como base, el equilibrio del\
-cuerpo mediante sus posturas y movimientos.\
-</p>";
-yoga[1] = "<p>\
-Esta actividad permite conectar mejor con tu ser, aportándote\
-beneficios tanto físicos (como la flexibilidad y resistencia) y\
-mentales (paz, sensación de bienestar, etc.)\
-</p>";
-yoga[2] = " <p>\
-Poco a poco iras viendo que cada vez llegas mas a esas posturas que al\
-inicio puede que no logres alcanzar.\
-</p>";
-yoga[3] = " <p>\
-El yoga ayuda mucho a desconectar de esos problemas del día a día que\
-hacen que llegues tenso/a y nervioso/a al finalizar el día y la\
-dispersa de tu cabeza, logrando que puedas ver las cosas con mejor\
-perspectiva y optimismo.\
-</p>";
+    for (const element of notificador) {
+        if(maxNotiNumber[0] <= 5){
+            if(idType == ids[0]){
+                if(element.id == ids[0]){
+                    const divNotificacion = document.createElement('div');
+                    const parrafoContenido = document.createElement('p');
+                    setTimeout(() => {
+                        switch(notificacionNumber[0]){
+                            case 0: element.removeChild(divNotificacion); break;
+                            case 1: element.removeChild(divNotificacion); break;
+                            case 2: element.removeChild(divNotificacion); break;
+                            case 3: element.removeChild(divNotificacion); break;
+                            case 4: element.removeChild(divNotificacion); break;
+                        }
+                    }, 12000);
+                    switch(notificacionNumber[0]){
+                        case 0: parrafoContenido.textContent = "Me llamo Alejandro"; break;
+                        case 1: parrafoContenido.textContent = "Y me gusta el chocolate"; break;
+                        case 2: parrafoContenido.textContent = "Pasear me despeja la mente"; break;
+                        case 3: parrafoContenido.textContent = "Y bailar menea mi cocotan"; break;
+                        case 4: parrafoContenido.textContent = "LO QUE ME GUSTA PERREAAAAAAR"; break;
+                    }
+                    element.appendChild(divNotificacion);
+                    divNotificacion.appendChild(parrafoContenido);
+                    
+                    divNotificacion.className = "notificacionStyle notiStyleNaranja";
+                    parrafoContenido.className = "notificacionContent notiContNaranja";
 
-var alimentacion = new Array ();
-alimentacion [0] = "<p>\
-Es vital mantener una dieta sana y equilibrada, en la que se coma\
-verdura, fruta, legumbres, cereales y carne como te recomendará\
-cualquier profesional de la salud.\
-</p>";
-alimentacion [1] = "<p>\
-Es muy importante evitar comida rápida, grasas trans, fritos y\
-productos con azúcares añadidos, ya que en especial estos últimos,\
-resultan ser adictivos.\
-</p>";
-alimentacion [2] = "<p>\
-Acudir a un dietista bien formado ya que este te hará un buen estudio\
-para posteriormente hacer una dieta que se ajuste a tus\
-características, dándote ayuda psicológica para que puedas adquirir y\
-mantener unos buenos hábitos alimenticios. ¡Al fin y al cabo, somos lo\
-que comemos!\
-</p>";
-alimentacion [3] = "<p>\
-Cuando tenemos una buena relación con los alimentos, nuestro cuerpo\
-funciona mucho mejor y, por lo tanto, sentimos un gran bienestar que\
-nos hace vivir más felices y nos ayuda a sentir mucha más conexión con\
-nosotros mismos.\
-</p>";
+                    notificacionNumber[0]++;
+                    if(notificacionNumber[0] >= 5) {
+                        notificacionNumber[0] = 0;
+                    }
+                }
+            }
+        }
 
-var tecnologia = new Array ();
-tecnologia [0] = "<p>\
-Actualmente, la tecnología esta cada vez más integrada en nuestras\
-vidas, pudiendo caer en la adicción a la tecnología y acabar teniendo\
-ansiedad en caso de no tener nuestro móvil a disposición.\
-</p>";
-tecnologia [1] = "<p>\
-Es importante que nosotros controlemos nuestros dispositivos, y no al\
-revés. Por eso es recomendable quitar todas las notificaciones de\
-nuestros teléfonos.\
-</p>";
-tecnologia [2] = "<p>\
-Es común tener una falsa sensación de estar perdiéndonos cosas\
-importantes si pasamos mucho tiempo sin mirar nuestro dispositivo. Hay\
-que recordar que no es cierto y que en caso de ocurrir algo\
-importante, los medios de comunicación conseguirán llegar por\
-cualquier vía tradicional.\
-</p>";
+        //Ejercicio
+        if(maxNotiNumber[1] <= 5){
+            if(idType == ids[1]){
+                if(element.id == ids[1]){
+                    const divNotificacion = document.createElement('div');
+                    const parrafoContenido = document.createElement('p');
+                    setTimeout(() => {
+                        switch(notificacionNumber[1]){
+                            case 0: element.removeChild(divNotificacion); break;
+                            case 1: element.removeChild(divNotificacion); break;
+                            case 2: element.removeChild(divNotificacion); break;
+                            case 3: element.removeChild(divNotificacion); break;
+                            case 4: element.removeChild(divNotificacion); break;
+                        }
+                    }, 12000);
+                    switch(notificacionNumber[1]){
+                        case 0: parrafoContenido.textContent = "Me llamo ALEJANDRO AJISDHASDGASDHG"; break;
+                        case 1: parrafoContenido.textContent = "Y me gusta el chocolate"; break;
+                        case 2: parrafoContenido.textContent = "Pasear me despeja la mente"; break;
+                        case 3: parrafoContenido.textContent = "Y bailar menea mi cocotan"; break;
+                        case 4: parrafoContenido.textContent = "LO QUE ME GUSTA PERREAAAAAAR"; break;
+                    }
+                    element.appendChild(divNotificacion);
+                    divNotificacion.appendChild(parrafoContenido);
+                    
+                    divNotificacion.className = "notificacionStyle notiStyleCerceta";
+                    parrafoContenido.className = "notificacionContent notiContCerceta";
 
-var mindfulness = new Array ();
-mindfulness [0] = "<p>\
-El Mindfulness es una técnica muy potente que te ayuda a centrarte en\
-el aquí y ahora. Esto trae como efectos beneficiosos el dejar de lado\
-aquellas preocupaciones que te atormentan constantemente.\
-</p>";
-mindfulness [1] = "<p>\
-Esta práctica es muy aconsejable para llegar a un estado mental de\
-equilibrio y bienestar, con lo que tus situaciones adversas las\
-afrontarás sin caer con tanta facilidad en la preocupación.\
-</p>";
+                    notificacionNumber[1]++;
+                    if(notificacionNumber[1] >= 5) {
+                        notificacionNumber[1] = 0;
+                    }
+                }
+            }
+        }
+
+        //Mindfulness
+        if(maxNotiNumber[2] <= 5){
+            if(idType == ids[2]){
+                if(element.id == ids[2]){
+                    const divNotificacion = document.createElement('div');
+                    const parrafoContenido = document.createElement('p');
+                    setTimeout(() => {
+                        switch(notificacionNumber[2]){
+                            case 0: element.removeChild(divNotificacion); break;
+                            case 1: element.removeChild(divNotificacion); break;
+                            case 2: element.removeChild(divNotificacion); break;
+                            case 3: element.removeChild(divNotificacion); break;
+                            case 4: element.removeChild(divNotificacion); break;
+                        }
+                    }, 12000);
+                    switch(notificacionNumber[2]){
+                        case 0: parrafoContenido.textContent = "Me llamo manolo"; break;
+                        case 1: parrafoContenido.textContent = "Y me gusta el chocolate"; break;
+                        case 2: parrafoContenido.textContent = "Pasear me despeja la mente"; break;
+                        case 3: parrafoContenido.textContent = "Y bailar menea mi cocotan"; break;
+                        case 4: parrafoContenido.textContent = "LO QUE ME GUSTA PERREAAAAAAR"; break;
+                    }
+                    element.appendChild(divNotificacion);
+                    divNotificacion.appendChild(parrafoContenido);
+                    
+                    divNotificacion.className = "notificacionStyle notiStyleAmarillo";
+                    parrafoContenido.className = "notificacionContent notiContAmarillo";
+
+                    notificacionNumber[2]++;
+                    if(notificacionNumber[2] >= 5) {
+                        notificacionNumber[2] = 0;
+                    }
+                }
+            }
+        }
+
+        //Yoga
+        if(maxNotiNumber[3] <= 5){
+            if(idType == ids[3]){
+                if(element.id == ids[3]){
+                    const divNotificacion = document.createElement('div');
+                    const parrafoContenido = document.createElement('p');
+                    setTimeout(() => {
+                        switch(notificacionNumber[3]){
+                            case 0: element.removeChild(divNotificacion); break;
+                            case 1: element.removeChild(divNotificacion); break;
+                            case 2: element.removeChild(divNotificacion); break;
+                            case 3: element.removeChild(divNotificacion); break;
+                            case 4: element.removeChild(divNotificacion); break;
+                        }
+                    }, 12000);
+                    switch(notificacionNumber[3]){
+                        case 0: parrafoContenido.textContent = "Me llamo manolo"; break;
+                        case 1: parrafoContenido.textContent = "Y me gusta el chocolate"; break;
+                        case 2: parrafoContenido.textContent = "Pasear me despeja la mente"; break;
+                        case 3: parrafoContenido.textContent = "Y bailar menea mi cocotan"; break;
+                        case 4: parrafoContenido.textContent = "LO QUE ME GUSTA PERREAAAAAAR"; break;
+                    }
+                    element.appendChild(divNotificacion);
+                    divNotificacion.appendChild(parrafoContenido);
+                    
+                    divNotificacion.className = "notificacionStyle notiStyleRosa";
+                    parrafoContenido.className = "notificacionContent notiContRosa";
+
+                    notificacionNumber[3]++;
+                    if(notificacionNumber[3] >= 5) {
+                        notificacionNumber[3] = 0;
+                    }
+                }
+            }
+        }
+
+        //Tecnologia
+        if(maxNotiNumber[4] <= 5){
+            if(idType == ids[4]){
+                if(element.id == ids[4]){
+                    const divNotificacion = document.createElement('div');
+                    const parrafoContenido = document.createElement('p');
+                    setTimeout(() => {
+                        switch(notificacionNumber[4]){
+                            case 0: element.removeChild(divNotificacion); break;
+                            case 1: element.removeChild(divNotificacion); break;
+                            case 2: element.removeChild(divNotificacion); break;
+                            case 3: element.removeChild(divNotificacion); break;
+                            case 4: element.removeChild(divNotificacion); break;
+                        }
+                    }, 12000);
+                    switch(notificacionNumber[4]){
+                        case 0: parrafoContenido.textContent = "Me llamo manolo"; break;
+                        case 1: parrafoContenido.textContent = "Y me gusta el chocolate"; break;
+                        case 2: parrafoContenido.textContent = "Pasear me despeja la mente"; break;
+                        case 3: parrafoContenido.textContent = "Y bailar menea mi cocotan"; break;
+                        case 4: parrafoContenido.textContent = "LO QUE ME GUSTA PERREAAAAAAR"; break;
+                    }
+                    element.appendChild(divNotificacion);
+                    divNotificacion.appendChild(parrafoContenido);
+                    
+                    divNotificacion.className = "notificacionStyle notiStyleAzul";
+                    parrafoContenido.className = "notificacionContent notiContAzul";
+
+                    notificacionNumber[4]++;
+                    if(notificacionNumber[4] >= 5) {
+                        notificacionNumber[4] = 0;
+                    }
+                }
+            }
+        }
+
+        //Introduccion
+
+        if(maxNotiNumber[5] <= 5){
+            if(idType == ids[5]){
+                if(element.id == ids[5]){
+                    const divNotificacion = document.createElement('div');
+                    const parrafoContenido = document.createElement('p');
+                    setTimeout(() => {
+                        switch(notificacionNumber[5]){
+                            case 0: element.removeChild(divNotificacion); break;
+                            case 1: element.removeChild(divNotificacion); break;
+                            case 2: element.removeChild(divNotificacion); break;
+                            case 3: element.removeChild(divNotificacion); break;
+                            case 4: element.removeChild(divNotificacion); break;
+                        }
+                    }, 12000);
+                    switch(notificacionNumber[5]){
+                        case 0: parrafoContenido.textContent = "Me llamo manolo"; break;
+                        case 1: parrafoContenido.textContent = "Y me gusta el chocolate"; break;
+                        case 2: parrafoContenido.textContent = "Pasear me despeja la mente"; break;
+                        case 3: parrafoContenido.textContent = "Y bailar menea mi cocotan"; break;
+                        case 4: parrafoContenido.textContent = "LO QUE ME GUSTA PERREAAAAAAR"; break;
+                    }
+                    element.appendChild(divNotificacion);
+                    divNotificacion.appendChild(parrafoContenido);
+                    
+                    divNotificacion.className = "notificacionStyle notiStyleBlanco";
+                    parrafoContenido.className = "notificacionContent notiContBlanco";
+
+                    notificacionNumber[5]++;
+                    if(notificacionNumber[5] >= 5) {
+                        notificacionNumber[5] = 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -26,13 +26,13 @@ const audiosSalvaje = [];
 const descriptions = [];
 const url = "http://localhost:9090/section/2/media";
 
-async function fetchMoviesJSON() {
+async function fetchAudiosJSON() {
   const response = await fetch(url);
   const jsonResponse = await response.json();
   return jsonResponse;
 }
 
-fetchMoviesJSON().then((json) => {
+fetchAudiosJSON().then((json) => {
   for (const element of json.media) {
     audiosSalvaje.push(element.urls);
     descriptions.push(element.description);

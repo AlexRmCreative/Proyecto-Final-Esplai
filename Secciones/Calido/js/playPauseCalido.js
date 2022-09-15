@@ -22,17 +22,17 @@ function paraDeGirar() {
 }
 
 /* Llamada a la API 🎹🔥 */
-const audiosAgua = [];
+const audiosCalido = [];
 const descriptions = [];
 const url = "http://localhost:9090/section/1/media";
 
-async function fetchMoviesJSON() {
+async function fetchAudiosJSON() {
   const response = await fetch(url);
   const jsonResponse = await response.json();
   return jsonResponse;
 }
 
-fetchMoviesJSON().then((json) => {
+fetchAudiosJSON().then((json) => {
   for (const element of json.media) {
     audiosCalido.push(element.urls);
     descriptions.push(element.description);
@@ -49,7 +49,6 @@ fetchMoviesJSON().then((json) => {
 function playPauseCalido(botonAudio) {
   var audio = document.getElementById("audioFile");
   if (botonSonando != botonAudio){
-      
     estadoPlayer = "pause";
   }
 
