@@ -15,16 +15,12 @@ img{
     height: 5.5vh;
 }
 
-.notifySpace{
-    display: flex;
-    justify-content: center;
-}
 .notificacionStyle{
     animation-name: aparecerAumentando;
     animation-duration: 1s;
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 45%;
     background-color: #90c455;
     border-radius: 5vh;
     -webkit-border-radius: 5vh;
@@ -34,7 +30,7 @@ img{
 }
 
 .notificacionContent{
-    width: 96.5%;
+    width: 100%;
     margin: 1vh;
     background-color: #9fd95c;
     border-radius: 5vh;
@@ -45,8 +41,9 @@ img{
 }
 
 p.notificacionContent{
+    width: 100%;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     font-family: Inconsolata;
     color: white;
 }
@@ -90,12 +87,6 @@ img {
         justify-content: start;
     }
 
-    .notifySpace {
-        width: 100%;
-        display: flex;
-        justify-content: start;
-    }
-
     #IntroduccionIcon {
         display: flex;
         justify-content: center;
@@ -111,12 +102,6 @@ img {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .notifyIcon {
-        width: 100%;
-        display: flex;
-        justify-content: start;
-    }
-
-    .notifySpace {
         width: 100%;
         display: flex;
         justify-content: start;
@@ -141,7 +126,8 @@ img {
         justify-content: start;
     }
 
-    .notifySpace {
+    .notifySpace{
+        min-width: 45%;
         display: flex;
         justify-content: start;
     }
@@ -160,16 +146,19 @@ img {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .notifyIcon {
-        justify-content: center;
+        display: flex;
+        justify-content: start;
     }
 
-    .notifySpace {
-        justify-content: center;
+    .notifySpace{
+        min-width: 45%;
+        display: flex;
+        justify-content: start;
     }
 
     #IntroduccionIcon {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         width: 80%;
     }
 
@@ -182,11 +171,14 @@ img {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .notifyIcon {
-        justify-content: center;
+        display: flex;
+        justify-content: start;
     }
 
-    .notifySpace {
-        justify-content: center;
+    .notifySpace{
+        min-width: 45%;
+        display: flex;
+        justify-content: start;
     }
 
     #IntroduccionIcon {
@@ -194,4 +186,45 @@ img {
         justify-content: center;
         width: 80%;
     }
+}
+
+/* notificacion en naranja */
+.notiStyleNaranja{
+    background-color: #ffb404;
+}
+
+.notiContNaranja{
+    background-color: #f9c03c;
+}
+/* notificacion en cerceta*/
+.notiStyleCerceta{
+    background-color: #008080;
+}
+
+.notiContCerceta{
+    background-color: #15a6a6;
+}
+/* notificacion en amarillo */
+.notiStyleAmarillo{
+    background-color: #eaff04;
+}
+
+.notiContAmarillo{
+    background-color: #e3f11e;
+}
+/* notificacion en rosa */
+.notiStyleRosa{
+    background-color: #fb1741;
+}
+
+.notiContRosa{
+    background-color: #ff4e6e;;
+}
+/* notificacion en azul */
+.notiStyleAzul{
+    background-color: #0d48eb;
+}
+
+.notiContAzul{
+    background-color: #4171f3;
 }

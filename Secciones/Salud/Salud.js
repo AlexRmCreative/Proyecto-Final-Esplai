@@ -73,8 +73,8 @@ function generarNotificacion(idType = ""){
                     element.appendChild(divNotificacion);
                     divNotificacion.appendChild(parrafoContenido);
                     
-                    divNotificacion.className = "notificacionStyle";
-                    parrafoContenido.className = "notificacionContent";
+                    divNotificacion.className = "notificacionStyle notiStyleNaranja";
+                    parrafoContenido.className = "notificacionContent notiContNaranja";
 
                     notificacionNumber[0]++;
                     if(notificacionNumber[0] >= 5) {
@@ -109,8 +109,8 @@ function generarNotificacion(idType = ""){
                     element.appendChild(divNotificacion);
                     divNotificacion.appendChild(parrafoContenido);
                     
-                    divNotificacion.className = "notificacionStyle";
-                    parrafoContenido.className = "notificacionContent";
+                    divNotificacion.className = "notificacionStyle notiStyleCerceta";
+                    parrafoContenido.className = "notificacionContent notiContCerceta";
 
                     notificacionNumber[1]++;
                     if(notificacionNumber[1] >= 5) {
@@ -145,8 +145,8 @@ function generarNotificacion(idType = ""){
                     element.appendChild(divNotificacion);
                     divNotificacion.appendChild(parrafoContenido);
                     
-                    divNotificacion.className = "notificacionStyle";
-                    parrafoContenido.className = "notificacionContent";
+                    divNotificacion.className = "notificacionStyle notiStyleAmarillo";
+                    parrafoContenido.className = "notificacionContent notiContAmarillo";
 
                     notificacionNumber[2]++;
                     if(notificacionNumber[2] >= 5) {
@@ -181,8 +181,8 @@ function generarNotificacion(idType = ""){
                     element.appendChild(divNotificacion);
                     divNotificacion.appendChild(parrafoContenido);
                     
-                    divNotificacion.className = "notificacionStyle";
-                    parrafoContenido.className = "notificacionContent";
+                    divNotificacion.className = "notificacionStyle notiStyleRosa";
+                    parrafoContenido.className = "notificacionContent notiContRosa";
 
                     notificacionNumber[3]++;
                     if(notificacionNumber[3] >= 5) {
@@ -217,8 +217,8 @@ function generarNotificacion(idType = ""){
                     element.appendChild(divNotificacion);
                     divNotificacion.appendChild(parrafoContenido);
                     
-                    divNotificacion.className = "notificacionStyle";
-                    parrafoContenido.className = "notificacionContent";
+                    divNotificacion.className = "notificacionStyle notiStyleAzul";
+                    parrafoContenido.className = "notificacionContent notiContAzul";
 
                     notificacionNumber[4]++;
                     if(notificacionNumber[4] >= 5) {

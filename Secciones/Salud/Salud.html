@@ -12,50 +12,54 @@
     <script src="Salud.js" defer></script>
 </head>
 
-<body class="w-100">
-
-    <div class="lienzo"></div>
-
-    <div id="IntroduccionIcon">
-
-        <div>
-            <a href="../../main.html"><img src="img/Alimentación.png" class="backImg rounded-circle" /> </a>
-        </div>
-
-        <div>
-            <a href="../../main.html"><img src="img/Alimentación.png" class="backImg rounded-circle" /> </a>
-        </div>
-        
-    </div>
+<body class="w-100" background="img/FondoSalud.jpg">
 
     <div class="lienzo"></div>
 
     <div class="row">
+        <div class="col-12 backButton">
+            <a href="../../main.html">
+            <img class="backImg" src="../img/Atras.png" />
+            </a>
+        </div>
+        
+        <div class="lienzo"></div>
+
         <div class="notifyIcon">
             <img src="img/Alimentación.png" onclick="generarNotificacion('Alimentacion')">
             <div id="Alimentacion" class="notifySpace"></div>
         </div>
+        
         <div class="lienzo"></div>
+
         <div class="notifyIcon">
-            <img src="img/Alimentación.png" onclick="generarNotificacion('Ejercicio')">
+            <img src="img/Ejercicio.png" onclick="generarNotificacion('Ejercicio')">
             <div id="Ejercicio" class="notifySpace"></div>
         </div>
+        
         <div class="lienzo"></div>
+
         <div class="notifyIcon">
-            <img src="img/Alimentación.png" onclick="generarNotificacion('Mindfulness')">
+            <img src="img/Mindfulness.png" onclick="generarNotificacion('Mindfulness')">
             <div id="Mindfulness" class="notifySpace"></div>
         </div>
+        
         <div class="lienzo"></div>
+
         <div class="notifyIcon">
-            <img src="img/Alimentación.png" onclick="generarNotificacion('Yoga')">
+            <img src="img/Yoga.png" onclick="generarNotificacion('Yoga')">
             <div id="Yoga" class="notifySpace"></div>
         </div>
+        
         <div class="lienzo"></div>
+
         <div class="notifyIcon">
-            <img src="img/Alimentación.png" onclick="generarNotificacion('Tecnologia')">
+            <img src="img/Tecnologia.png" onclick="generarNotificacion('Tecnologia')">
             <div id="Tecnologia" class="notifySpace"></div>
         </div>
+        
         <div class="lienzo"></div>
+
     </div>
 </body>
 
