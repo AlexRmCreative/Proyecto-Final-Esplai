@@ -1,5 +1,5 @@
-var maxNotiNumber = [0,0,0,0,0];
-var notificacionNumber = [0,0,0,0,0];
+var maxNotiNumber = [0,0,0,0,0,0];
+var notificacionNumber = [0,0,0,0,0,0];
 function generarNotificacion(idType = ""){
     /*document.querySelector("div .notifySpace").appendChild(notificacion);
     notificacion.className = "notificacionStyle";
@@ -8,7 +8,7 @@ function generarNotificacion(idType = ""){
     document.querySelector(".notificacionContent").innerHTML = "MI NOMBRE ES ALEJANDRO lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
     */
     var notificador = document.querySelectorAll(".notifySpace"); //4
-    let ids = ["Alimentacion", "Ejercicio", "Mindfulness", "Yoga", "Tecnologia"];
+    let ids = ["Alimentacion", "Ejercicio", "Mindfulness", "Yoga", "Tecnologia", "Introduccion"];
     
     if(idType == ids[0] && maxNotiNumber[0] <= 5)
     {
@@ -45,7 +45,13 @@ function generarNotificacion(idType = ""){
             maxNotiNumber[4]--;
         }, 12000);
     }
-
+    if(idType == ids[5] && maxNotiNumber[5] <= 5)
+    {
+        maxNotiNumber[5]++;
+        setTimeout(() => {
+            maxNotiNumber[5]--;
+        }, 12000);
+    }
 
 
     for (const element of notificador) {
@@ -223,6 +229,43 @@ function generarNotificacion(idType = ""){
                     notificacionNumber[4]++;
                     if(notificacionNumber[4] >= 5) {
                         notificacionNumber[4] = 0;
+                    }
+                }
+            }
+        }
+
+        //Introduccion
+
+        if(maxNotiNumber[5] <= 5){
+            if(idType == ids[5]){
+                if(element.id == ids[5]){
+                    const divNotificacion = document.createElement('div');
+                    const parrafoContenido = document.createElement('p');
+                    setTimeout(() => {
+                        switch(notificacionNumber[5]){
+                            case 0: element.removeChild(divNotificacion); break;
+                            case 1: element.removeChild(divNotificacion); break;
+                            case 2: element.removeChild(divNotificacion); break;
+                            case 3: element.removeChild(divNotificacion); break;
+                            case 4: element.removeChild(divNotificacion); break;
+                        }
+                    }, 12000);
+                    switch(notificacionNumber[5]){
+                        case 0: parrafoContenido.textContent = "Me llamo manolo"; break;
+                        case 1: parrafoContenido.textContent = "Y me gusta el chocolate"; break;
+                        case 2: parrafoContenido.textContent = "Pasear me despeja la mente"; break;
+                        case 3: parrafoContenido.textContent = "Y bailar menea mi cocotan"; break;
+                        case 4: parrafoContenido.textContent = "LO QUE ME GUSTA PERREAAAAAAR"; break;
+                    }
+                    element.appendChild(divNotificacion);
+                    divNotificacion.appendChild(parrafoContenido);
+                    
+                    divNotificacion.className = "notificacionStyle notiStyleBlanco";
+                    parrafoContenido.className = "notificacionContent notiContBlanco";
+
+                    notificacionNumber[5]++;
+                    if(notificacionNumber[5] >= 5) {
+                        notificacionNumber[5] = 0;
                     }
                 }
             }
