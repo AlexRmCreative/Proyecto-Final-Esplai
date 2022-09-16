@@ -14,17 +14,15 @@ fetchMensajesJSON().then((json) => {
     mensajesSalud.push(element.urls);
     descriptions.push(element.description);
   }
+
+  document.getElementById("salud-1").innerText=descriptions[0];
 });
 
 var maxNotiNumber = [0,0,0,0,0,0];
 var notificacionNumber = [0,0,0,0,0,0];
 function generarNotificacion(idType = ""){
-    /*document.querySelector("div .notifySpace").appendChild(notificacion);
-    notificacion.className = "notificacionStyle";
-    document.querySelector("div .notificacionStyle").appendChild(contentNotificacion);
-    contentNotificacion.className = "notificacionContent";
-    document.querySelector(".notificacionContent").innerHTML = "MI NOMBRE ES ALEJANDRO lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-    */
+    //parrafoContenido.textContent = mensajesSalud[0];
+
     var notificador = document.querySelectorAll(".notifySpace"); //4
     let ids = ["Alimentacion", "Ejercicio", "Mindfulness", "Yoga", "Tecnologia", "Introduccion"];
     
@@ -90,7 +88,7 @@ function generarNotificacion(idType = ""){
                         }
                     }, 12000);
                     switch(notificacionNumber[0]){
-                        case 0: parrafoContenido.textContent = "Me llamo Alejandro"; break;
+                        case 0: parrafoContenido.textContent = console.log(mensajesSalud[0]); break;
                         case 1: parrafoContenido.textContent = "Y me gusta el chocolate"; break;
                         case 2: parrafoContenido.textContent = "Pasear me despeja la mente"; break;
                         case 3: parrafoContenido.textContent = "Y bailar menea mi cocotan"; break;
@@ -115,7 +113,7 @@ function generarNotificacion(idType = ""){
             if(idType == ids[1]){
                 if(element.id == ids[1]){
                     const divNotificacion = document.createElement('div');
-                    const parrafoContenido = document.createElement('p');
+                    const parrafoContenido = document.createElement('h4');
                     setTimeout(() => {
                         switch(notificacionNumber[1]){
                             case 0: element.removeChild(divNotificacion); break;
@@ -126,11 +124,10 @@ function generarNotificacion(idType = ""){
                         }
                     }, 12000);
                     switch(notificacionNumber[1]){
-                        case 0: parrafoContenido.textContent = "Me llamo ALEJANDRO AJISDHASDGASDHG"; break;
-                        case 1: parrafoContenido.textContent = "Y me gusta el chocolate"; break;
-                        case 2: parrafoContenido.textContent = "Pasear me despeja la mente"; break;
-                        case 3: parrafoContenido.textContent = "Y bailar menea mi cocotan"; break;
-                        case 4: parrafoContenido.textContent = "LO QUE ME GUSTA PERREAAAAAAR"; break;
+                        case 0: parrafoContenido.textContent = mensajesSalud[2]; break;
+                        case 1: parrafoContenido.textContent = console.log(mensajesSalud[3]); break;
+                        case 2: parrafoContenido.textContent = console.log(mensajesSalud[4]); break;
+                        case 3: parrafoContenido.textContent = console.log(mensajesSalud[5]); break;
                     }
                     element.appendChild(divNotificacion);
                     divNotificacion.appendChild(parrafoContenido);
@@ -162,11 +159,11 @@ function generarNotificacion(idType = ""){
                         }
                     }, 12000);
                     switch(notificacionNumber[2]){
-                        case 0: parrafoContenido.textContent = "Me llamo manolo"; break;
-                        case 1: parrafoContenido.textContent = "Y me gusta el chocolate"; break;
-                        case 2: parrafoContenido.textContent = "Pasear me despeja la mente"; break;
-                        case 3: parrafoContenido.textContent = "Y bailar menea mi cocotan"; break;
-                        case 4: parrafoContenido.textContent = "LO QUE ME GUSTA PERREAAAAAAR"; break;
+                        case 0: parrafoContenido.textContent = console.log(mensajesSalud[2]); break;
+                        case 1: parrafoContenido.textContent = console.log(mensajesSalud[2]); break;
+                        case 2: parrafoContenido.textContent = console.log(mensajesSalud[2]); break;
+                        case 3: parrafoContenido.textContent = console.log(mensajesSalud[2]); break;
+                        case 4: parrafoContenido.textContent = console.log(mensajesSalud[2]); break;
                     }
                     element.appendChild(divNotificacion);
                     divNotificacion.appendChild(parrafoContenido);
