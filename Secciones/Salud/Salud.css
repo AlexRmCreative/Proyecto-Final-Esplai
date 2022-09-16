@@ -239,3 +239,8 @@ img {
 .notiContBlanco{
     background-color: #c1c3c9;
 }
+
+.containerNotificaciones{
+    display: flex;
+    justify-content: center;
+}
