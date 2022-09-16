@@ -10,6 +10,14 @@
     height: 5.5vh;
 }
 
+.imagen:hover{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    box-shadow: 7px 7px 11px #ffffff, -7px -7px 11px #ffffff;
+}
 .notificacionStyle{
     animation-name: aparecerAumentando;
     animation-duration: 1s;
