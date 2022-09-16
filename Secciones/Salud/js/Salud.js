@@ -1,26 +1,20 @@
 /* Llamada a la API 🎹🔥 */
-const audiosAgua = [];
+const mensajesSalud = [];
 const descriptions = [];
 const url = "http://localhost:9090/section/5/media";
 
-async function fetchSonidosJSON() {
+async function fetchMensajesJSON() {
   const response = await fetch(url);
   const jsonResponse = await response.json();
   return jsonResponse;
 }
 
-fetchSonidosJSON().then((json) => {
+fetchMensajesJSON().then((json) => {
   for (const element of json.media) {
-    audiosAgua.push(element.urls);
+    mensajesSalud.push(element.urls);
     descriptions.push(element.description);
   }
-  document.getElementById("agua-0").innerText = descriptions[0];
-  document.getElementById("agua-1").innerText = descriptions[1];
-  document.getElementById("agua-2").innerText = descriptions[2];
-  document.getElementById("agua-3").innerText = descriptions[3];
-  document.getElementById("agua-4").innerText = descriptions[4];
 });
-
 
 var maxNotiNumber = [0,0,0,0,0,0];
 var notificacionNumber = [0,0,0,0,0,0];
@@ -86,7 +80,9 @@ function generarNotificacion(idType = ""){
                     const parrafoContenido = document.createElement('p');
                     setTimeout(() => {
                         switch(notificacionNumber[0]){
+                            
                             case 0: element.removeChild(divNotificacion); break;
+                            
                             case 1: element.removeChild(divNotificacion); break;
                             case 2: element.removeChild(divNotificacion); break;
                             case 3: element.removeChild(divNotificacion); break;
@@ -296,4 +292,3 @@ function generarNotificacion(idType = ""){
         }
     }
 }
-dfdfdfdf

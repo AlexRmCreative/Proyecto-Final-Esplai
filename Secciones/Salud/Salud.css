@@ -244,5 +244,12 @@ img {
     display: flex;
     justify-content: center;
 }
-
-fdfdfdfdfdfdf
+h4{
+    font-size: 34px;
+}
+.notificacionContent{
+    font-size: 20px;
+}
+.backButton{
+    margin-left: 5%;
+}
