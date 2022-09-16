@@ -37,11 +37,11 @@ fetchSonidosJSON().then((json) => {
     audiosAire.push(element.urls);
     descriptions.push(element.description);
   }
-  document.getElementById("aire-0").innerText = descriptions[0];
-  document.getElementById("aire-1").innerText = descriptions[1];
-  document.getElementById("aire-2").innerText = descriptions[2];
-  document.getElementById("aire-3").innerText = descriptions[3];
-  document.getElementById("aire-4").innerText = descriptions[4];
+  document.getElementById("aire-0").innerText = descriptions[3];
+  document.getElementById("aire-1").innerText = descriptions[2];
+  document.getElementById("aire-2").innerText = descriptions[4];
+  document.getElementById("aire-3").innerText = descriptions[1];
+  document.getElementById("aire-4").innerText = descriptions[0];
 });
 
 //Funcion para cambiar sonido play/pause y la imagen del boton
@@ -55,7 +55,7 @@ function playPauseAire(botonAudio) {
     
     switch (botonAudio) {
       case 1:
-    audio.src = audiosAire[0];
+    audio.src = audiosAire[3];
     var imagen = document.getElementById("imgControlAireAcondicionado");
     
     if (estadoPlayer == "pause") {
@@ -76,7 +76,7 @@ function playPauseAire(botonAudio) {
     break;
 
   case 2:
-    audio.src = audiosAire[1];
+    audio.src = audiosAire[2];
     var imagen = document.getElementById("imgControlTormenta");
     
     if (estadoPlayer == "pause") {
@@ -98,7 +98,7 @@ function playPauseAire(botonAudio) {
     break;
 
     case 3:
-      audio.src = audiosAire[2];
+      audio.src = audiosAire[4];
       var imagen = document.getElementById("imgControlVentilador");
       if (estadoPlayer == "pause") {
         paraDeGirar();
@@ -118,7 +118,7 @@ function playPauseAire(botonAudio) {
       break;
 
         case 4:
-      audio.src = audiosAire[3];
+      audio.src = audiosAire[1];
       var imagen = document.getElementById("imgControlVentisca");
       if (estadoPlayer == "pause") {
         paraDeGirar();
@@ -138,7 +138,7 @@ function playPauseAire(botonAudio) {
       break;
 
         case 5:
-      audio.src = audiosAire[4];
+      audio.src = audiosAire[0];
       var imagen = document.getElementById("imgControlViento");
       if (estadoPlayer == "pause") {
         paraDeGirar();
