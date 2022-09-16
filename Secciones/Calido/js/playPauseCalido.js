@@ -26,13 +26,13 @@ const audiosCalido = [];
 const descriptions = [];
 const url = "http://localhost:9090/section/1/media";
 
-async function fetchAudiosJSON() {
+async function fetchSonidosJSON() {
   const response = await fetch(url);
   const jsonResponse = await response.json();
   return jsonResponse;
 }
 
-fetchAudiosJSON().then((json) => {
+fetchSonidosJSON().then((json) => {
   for (const element of json.media) {
     audiosCalido.push(element.urls);
     descriptions.push(element.description);

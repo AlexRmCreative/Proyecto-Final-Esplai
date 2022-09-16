@@ -26,13 +26,13 @@ const audiosAgua = [];
 const descriptions = [];
 const url = "http://localhost:9090/section/3/media";
 
-async function fetchAudiosJSON() {
+async function fetchSonidosJSON() {
   const response = await fetch(url);
   const jsonResponse = await response.json();
   return jsonResponse;
 }
 
-fetchAudiosJSON().then((json) => {
+fetchSonidosJSON().then((json) => {
   for (const element of json.media) {
     audiosAgua.push(element.urls);
     descriptions.push(element.description);
