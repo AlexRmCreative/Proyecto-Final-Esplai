@@ -1,3 +1,27 @@
+/* Llamada a la API 🎹🔥 */
+const audiosAgua = [];
+const descriptions = [];
+const url = "http://localhost:9090/section/5/media";
+
+async function fetchSonidosJSON() {
+  const response = await fetch(url);
+  const jsonResponse = await response.json();
+  return jsonResponse;
+}
+
+fetchSonidosJSON().then((json) => {
+  for (const element of json.media) {
+    audiosAgua.push(element.urls);
+    descriptions.push(element.description);
+  }
+  document.getElementById("agua-0").innerText = descriptions[0];
+  document.getElementById("agua-1").innerText = descriptions[1];
+  document.getElementById("agua-2").innerText = descriptions[2];
+  document.getElementById("agua-3").innerText = descriptions[3];
+  document.getElementById("agua-4").innerText = descriptions[4];
+});
+
+
 var maxNotiNumber = [0,0,0,0,0,0];
 var notificacionNumber = [0,0,0,0,0,0];
 function generarNotificacion(idType = ""){
