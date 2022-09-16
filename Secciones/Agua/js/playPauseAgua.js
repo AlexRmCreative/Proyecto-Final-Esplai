@@ -135,7 +135,7 @@ function playPauseAgua(botonAudio) {
       break;
 
     case 5:
-      audio.src = audiosAgua[0];
+      audio.src = audiosAgua[4];
       var imagen = document.getElementById("imgControlGoteo");
       if (estadoPlayer == "pause") {
         paraDeGirar();
