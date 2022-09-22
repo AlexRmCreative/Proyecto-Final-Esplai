@@ -156,8 +156,4 @@ function playPauseAgua(botonAudio) {
   }
 }
 
-function play(sound) {
-  var audio = document.getElementById("audioFile");
-  audio.src = sound;
-  audio.play();
-}
+
