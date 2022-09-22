@@ -1,0 +1,77 @@
+body{
+    background-size: 100%;
+}
+.focus{
+    color: #ffffff;
+}
+.titulo{
+    height: 23vh ;
+    margin-top: 5vh;
+}
+
+.salud{
+    margin-top: 7vh; 
+}
+
+.imagen:hover{
+    box-shadow: 5px 5px 9px #b3b3b3,
+        -5px -5px 9px #ffffff;
+    transform: scale(1.3);
+    margin-bottom: 2vh;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+.IconImg{
+    width: 17vh;
+    height: 17vh;
+    box-shadow: 5px 5px 9px #b3b3b3,
+        -5px -5px 9px #ffffff;
+}
+.imgSonidos:hover {
+    box-shadow: 5px 5px 9px #b3b3b3, -5px -5px 9px #ffffff;
+    transform: scale(1.3);
+    margin-bottom: 2vh;
+}
+.footerImg{
+    width: 13vh;
+    height: 13vh;
+}
+
+.lienzo{
+    height: 12vh;
+}
+@media (max-width: 575.98px) {
+    .ayuda{
+        display: flex;
+        justify-content: center;
+    }
+    .lienzo{
+        height: 0vh;
+    }
+    .back, .backImg, a{
+        display: flex;
+        justify-content: center;
+    }
+    .backImg{
+        width: 13vh;
+        height: 13vh;
+    }
+    .soundImg{
+        width: 16vh;
+        height: 16vh;
+    }
+    .footerImg{
+        width: 13vh;
+        height: 13vh;
+    }
+    h4{
+        font-size: 2vh;
+    }
+
+    .salud{
+        margin-top: 0vh; 
+    }
+}
